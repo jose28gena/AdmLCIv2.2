@@ -1,0 +1,612 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0D85D43B-8B24-403C-A98E-6FCEE116A25B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AdmLCI</RootNamespace>
+    <AssemblyName>AdmLCI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="itextsharp">
+      <HintPath>C:\Users\dnb\Desktop\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.pdfa">
+      <HintPath>C:\Users\dnb\Desktop\itextsharp.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xtra">
+      <HintPath>C:\Users\dnb\Desktop\itextsharp.xtra.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdmnLockers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdmnLockers.designer.cs">
+      <DependentUpon>AdmnLockers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdmnSoftware.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdmnSoftware.designer.cs">
+      <DependentUpon>AdmnSoftware.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admonEquipos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admonEquipos.Designer.cs">
+      <DependentUpon>admonEquipos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admonReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admonReporte.Designer.cs">
+      <DependentUpon>admonReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admonUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admonUsuarios.Designer.cs">
+      <DependentUpon>admonUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarEquipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarEquipo.designer.cs">
+      <DependentUpon>AgregarEquipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarLocker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarLocker.designer.cs">
+      <DependentUpon>AgregarLocker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarSala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarSala.Designer.cs">
+      <DependentUpon>AgregarSala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarSoft.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarSoft.designer.cs">
+      <DependentUpon>AgregarSoft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlumnosEspeciales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlumnosEspeciales.designer.cs">
+      <DependentUpon>AlumnosEspeciales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsignarComp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsignarComp.designer.cs">
+      <DependentUpon>AsignarComp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsignarLocker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsignarLocker.designer.cs">
+      <DependentUpon>AsignarLocker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarSoft.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarSoft.designer.cs">
+      <DependentUpon>BuscarSoft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conexion.cs" />
+    <Compile Include="Config.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Config.Designer.cs">
+      <DependentUpon>Config.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consulta.Designer.cs">
+      <DependentUpon>Consulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaResultado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaResultado.Designer.cs">
+      <DependentUpon>ConsultaResultado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Desasignar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Desasignar.Designer.cs">
+      <DependentUpon>Desasignar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Desasingarlocker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Desasingarlocker.designer.cs">
+      <DependentUpon>Desasingarlocker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eliminarespecial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eliminarespecial.designer.cs">
+      <DependentUpon>Eliminarespecial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eliminarlocker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eliminarlocker.designer.cs">
+      <DependentUpon>Eliminarlocker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eliminarsoft.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eliminarsoft.designer.cs">
+      <DependentUpon>Eliminarsoft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Equipo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InactivoEsp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InactivoEsp.designer.cs">
+      <DependentUpon>InactivoEsp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoEquipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoEquipo.Designer.cs">
+      <DependentUpon>InfoEquipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INIFile.cs" />
+    <Compile Include="inOut.cs" />
+    <Compile Include="lciFinalDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>lciFinalDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Lista_especiales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista_especiales.designer.cs">
+      <DependentUpon>Lista_especiales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Locker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="locker_info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="locker_info.designer.cs">
+      <DependentUpon>locker_info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoEquipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenimientoEquipo.Designer.cs">
+      <DependentUpon>MantenimientoEquipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mesa.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="agregarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="agregarUsuario.designer.cs">
+      <DependentUpon>agregarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modificar_sancion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modificar_sancion.designer.cs">
+      <DependentUpon>modificar_sancion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mostrarlista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mostrarlista.designer.cs">
+      <DependentUpon>mostrarlista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaPrincipal.Designer.cs">
+      <DependentUpon>PantallaPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReactivarEsp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReactivarEsp.designer.cs">
+      <DependentUpon>ReactivarEsp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReservarSala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReservarSala.Designer.cs">
+      <DependentUpon>ReservarSala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sala.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sanciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sanciones.designer.cs">
+      <DependentUpon>Sanciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sesion.cs" />
+    <Compile Include="SoftwareEquipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoftwareEquipo.designer.cs">
+      <DependentUpon>SoftwareEquipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tablas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Tablas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Tooltipslock.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Validacion.cs" />
+    <Compile Include="VerSancionados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerSancionados.designer.cs">
+      <DependentUpon>VerSancionados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\webServiceLCI\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdmnLockers.resx">
+      <DependentUpon>AdmnLockers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdmnSoftware.resx">
+      <DependentUpon>AdmnSoftware.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admonEquipos.resx">
+      <DependentUpon>admonEquipos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admonReporte.resx">
+      <DependentUpon>admonReporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admonUsuarios.resx">
+      <DependentUpon>admonUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarEquipo.resx">
+      <DependentUpon>AgregarEquipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarLocker.resx">
+      <DependentUpon>AgregarLocker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarSala.resx">
+      <DependentUpon>AgregarSala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarSoft.resx">
+      <DependentUpon>AgregarSoft.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlumnosEspeciales.resx">
+      <DependentUpon>AlumnosEspeciales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsignarComp.resx">
+      <DependentUpon>AsignarComp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsignarLocker.resx">
+      <DependentUpon>AsignarLocker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarSoft.resx">
+      <DependentUpon>BuscarSoft.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Config.resx">
+      <DependentUpon>Config.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consulta.resx">
+      <DependentUpon>Consulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaResultado.resx">
+      <DependentUpon>ConsultaResultado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Desasignar.resx">
+      <DependentUpon>Desasignar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Desasingarlocker.resx">
+      <DependentUpon>Desasingarlocker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eliminarespecial.resx">
+      <DependentUpon>Eliminarespecial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eliminarlocker.resx">
+      <DependentUpon>Eliminarlocker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eliminarsoft.resx">
+      <DependentUpon>Eliminarsoft.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InactivoEsp.resx">
+      <DependentUpon>InactivoEsp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoEquipo.resx">
+      <DependentUpon>InfoEquipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lista_especiales.resx">
+      <DependentUpon>Lista_especiales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Locker.resx">
+      <DependentUpon>Locker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="locker_info.resx">
+      <DependentUpon>locker_info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenimientoEquipo.resx">
+      <DependentUpon>MantenimientoEquipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="agregarUsuario.resx">
+      <DependentUpon>agregarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modificar_sancion.resx">
+      <DependentUpon>modificar_sancion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mostrarlista.resx">
+      <DependentUpon>mostrarlista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaPrincipal.resx">
+      <DependentUpon>PantallaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReactivarEsp.resx">
+      <DependentUpon>ReactivarEsp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="ReservarSala.resx">
+      <DependentUpon>ReservarSala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sanciones.resx">
+      <DependentUpon>Sanciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SoftwareEquipo.resx">
+      <DependentUpon>SoftwareEquipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerSancionados.resx">
+      <DependentUpon>VerSancionados.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="lciFinalDataSet.xsc">
+      <DependentUpon>lciFinalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="lciFinalDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>lciFinalDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="lciFinalDataSet.xss">
+      <DependentUpon>lciFinalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Tablas.xsc">
+      <DependentUpon>Tablas.xsd</DependentUpon>
+    </None>
+    <None Include="Tablas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Tablas.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Tablas.xss">
+      <DependentUpon>Tablas.xsd</DependentUpon>
+    </None>
+    <None Include="Web References\webServiceLCI\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\webServiceLCI\service.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salaIcono.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compLibre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compOcupada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alumno.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modificarComp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computadoraAdd1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computadoraMant2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salaMantenimiento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Locker_asignado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\locker_empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://www.sistservices.uson.mx:81/wslci/service.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\webServiceLCI\</RelPath>
+      <UpdateFromURL>http://www.sistservices.uson.mx:81/wslci/service.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>AdmLCI_webServiceLCI_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\webServiceLCI\service.disco" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
