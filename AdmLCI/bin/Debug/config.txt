@@ -1,0 +1,6 @@
+servidor:148.225.26.18
+usuario:siscalc
+contrasenia:siscalc
+basedatos:lci
+contraseniaM:1414
+servidorM:148.225.25.12

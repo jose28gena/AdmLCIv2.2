@@ -1,0 +1,373 @@
+D:\Visual Studio Projects\AdmLCI\AdmLCI\bin\Debug\AdmLCI.exe
+D:\Visual Studio Projects\AdmLCI\AdmLCI\bin\Debug\AdmLCI.pdb
+D:\Visual Studio Projects\AdmLCI\AdmLCI\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio Projects\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.PantallaPrincipal.resources
+D:\Visual Studio Projects\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.Properties.Resources.resources
+D:\Visual Studio Projects\AdmLCI\AdmLCI\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Visual Studio Projects\AdmLCI\AdmLCI\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Visual Studio Projects\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.exe
+D:\Visual Studio Projects\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.pdb
+D:\Visual Studio Projects\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.AgregarEquipo.resources
+D:\Visual Studio Projects\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.login.resources
+D:\Visual Studio Projects\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.AsignarComp.resources
+D:\Visual Studio Projects\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.AgregarSala.resources
+D:\Visual Studio Projects\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.admonEquipos.resources
+D:\Visual Studio Projects\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.InfoEquipo.resources
+D:\Visual Studio Projects\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.admonUsuarios.resources
+D:\Visual Studio Projects\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.agregarUsuario.resources
+D:\Visual Studio Projects\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.MantenimientoEquipo.resources
+D:\Visual Studio Projects\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.Desasignar.resources
+D:\Visual Studio Projects\AdmLCI\AdmLCI\bin\Debug\AdmLCI.exe.config
+D:\Visual Studio Projects\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.admonReporte.resources
+D:\Visual Studio Projects\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.Consulta.resources
+D:\Visual Studio Projects\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.ReporteVer.resources
+D:\Visual Studio Projects\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.ConsultaResultado.resources
+D:\Visual Studio Projects\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.AdmnSoftware.resources
+D:\Visual Studio Projects\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.AdmonLockers.resources
+D:\Visual Studio Projects\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.AgregarLocker.resources
+D:\Visual Studio Projects\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.AgregarSoft.resources
+D:\Visual Studio Projects\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.AlumnosEspeciales.resources
+D:\Visual Studio Projects\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.AsignarLocker.resources
+D:\Visual Studio Projects\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.BuscarSoft.resources
+D:\Visual Studio Projects\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.Lista_especiales.resources
+D:\Visual Studio Projects\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.Locker.resources
+D:\Visual Studio Projects\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.ReactivarEspecial.resources
+D:\Visual Studio Projects\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.Sanciones.resources
+D:\Visual Studio Projects\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.SoftwareEquipo.resources
+D:\Visual Studio Projects\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.VerSancionados.resources
+D:\Visual Studio Projects\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.modificar_sancion.resources
+C:\Users\5g\Documents\AdmLCI\AdmLCI\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\5g\Documents\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.AdmnSoftware.resources
+C:\Users\5g\Documents\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.admonEquipos.resources
+C:\Users\5g\Documents\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.AdmonLockers.resources
+C:\Users\5g\Documents\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.admonReporte.resources
+C:\Users\5g\Documents\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.admonUsuarios.resources
+C:\Users\5g\Documents\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.AgregarEquipo.resources
+C:\Users\5g\Documents\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.AgregarLocker.resources
+C:\Users\5g\Documents\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.AgregarSala.resources
+C:\Users\5g\Documents\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.AgregarSoft.resources
+C:\Users\5g\Documents\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.AlumnosEspeciales.resources
+C:\Users\5g\Documents\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.AsignarComp.resources
+C:\Users\5g\Documents\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.AsignarLocker.resources
+C:\Users\5g\Documents\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.BuscarSoft.resources
+C:\Users\5g\Documents\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.Consulta.resources
+C:\Users\5g\Documents\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.ConsultaResultado.resources
+C:\Users\5g\Documents\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.Lista_especiales.resources
+C:\Users\5g\Documents\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.Locker.resources
+C:\Users\5g\Documents\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.modificar_sancion.resources
+C:\Users\5g\Documents\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.ReactivarEspecial.resources
+C:\Users\5g\Documents\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.Desasignar.resources
+C:\Users\5g\Documents\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.InfoEquipo.resources
+C:\Users\5g\Documents\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.Login.resources
+C:\Users\5g\Documents\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.MantenimientoEquipo.resources
+C:\Users\5g\Documents\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.agregarUsuario.resources
+C:\Users\5g\Documents\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.PantallaPrincipal.resources
+C:\Users\5g\Documents\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.Properties.Resources.resources
+C:\Users\5g\Documents\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.ReporteVer.resources
+C:\Users\5g\Documents\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.Sanciones.resources
+C:\Users\5g\Documents\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.SoftwareEquipo.resources
+C:\Users\5g\Documents\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.VerSancionados.resources
+C:\Users\5g\Documents\AdmLCI\AdmLCI\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\5g\Documents\AdmLCI\AdmLCI\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\5g\Documents\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.exe
+C:\Users\5g\Documents\AdmLCI\AdmLCI\obj\x86\Debug\AdmLCI.pdb
+C:\Users\5g\Documents\AdmLCI\AdmLCI\bin\Debug\AdmLCI.exe.config
+C:\Users\5g\Documents\AdmLCI\AdmLCI\bin\Debug\AdmLCI.exe
+C:\Users\5g\Documents\AdmLCI\AdmLCI\bin\Debug\AdmLCI.pdb
+C:\Users\5g\Documents\AdmLCIv2.0\AdmLCI\bin\Debug\AdmLCI.exe.config
+C:\Users\5g\Documents\AdmLCIv2.0\AdmLCI\bin\Debug\AdmLCI.exe
+C:\Users\5g\Documents\AdmLCIv2.0\AdmLCI\bin\Debug\AdmLCI.pdb
+C:\Users\5g\Documents\AdmLCIv2.0\AdmLCI\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\5g\Documents\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.AdmnSoftware.resources
+C:\Users\5g\Documents\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.admonEquipos.resources
+C:\Users\5g\Documents\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.AdmonLockers.resources
+C:\Users\5g\Documents\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.admonReporte.resources
+C:\Users\5g\Documents\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.admonUsuarios.resources
+C:\Users\5g\Documents\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.AgregarEquipo.resources
+C:\Users\5g\Documents\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.AgregarLocker.resources
+C:\Users\5g\Documents\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.AgregarSala.resources
+C:\Users\5g\Documents\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.AgregarSoft.resources
+C:\Users\5g\Documents\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.AlumnosEspeciales.resources
+C:\Users\5g\Documents\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.AsignarComp.resources
+C:\Users\5g\Documents\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.AsignarLocker.resources
+C:\Users\5g\Documents\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.BuscarSoft.resources
+C:\Users\5g\Documents\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.Consulta.resources
+C:\Users\5g\Documents\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.ConsultaResultado.resources
+C:\Users\5g\Documents\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.Lista_especiales.resources
+C:\Users\5g\Documents\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.modificar_sancion.resources
+C:\Users\5g\Documents\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.ReactivarEspecial.resources
+C:\Users\5g\Documents\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.Desasignar.resources
+C:\Users\5g\Documents\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.InfoEquipo.resources
+C:\Users\5g\Documents\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.Login.resources
+C:\Users\5g\Documents\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.MantenimientoEquipo.resources
+C:\Users\5g\Documents\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.agregarUsuario.resources
+C:\Users\5g\Documents\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.PantallaPrincipal.resources
+C:\Users\5g\Documents\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.Properties.Resources.resources
+C:\Users\5g\Documents\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.ReporteVer.resources
+C:\Users\5g\Documents\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.Sanciones.resources
+C:\Users\5g\Documents\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.SoftwareEquipo.resources
+C:\Users\5g\Documents\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.VerSancionados.resources
+C:\Users\5g\Documents\AdmLCIv2.0\AdmLCI\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\5g\Documents\AdmLCIv2.0\AdmLCI\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\5g\Documents\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.exe
+C:\Users\5g\Documents\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.pdb
+C:\Users\5g\Documents\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.locker_info.resources
+G:\AdmLCIv2.0\AdmLCI\bin\Debug\AdmLCI.exe.config
+G:\AdmLCIv2.0\AdmLCI\bin\Debug\AdmLCI.exe
+G:\AdmLCIv2.0\AdmLCI\bin\Debug\AdmLCI.pdb
+G:\AdmLCIv2.0\AdmLCI\obj\x86\Debug\ResolveAssemblyReference.cache
+G:\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.AdmnSoftware.resources
+G:\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.admonEquipos.resources
+G:\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.AdmonLockers.resources
+G:\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.admonReporte.resources
+G:\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.admonUsuarios.resources
+G:\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.AgregarEquipo.resources
+G:\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.AgregarLocker.resources
+G:\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.AgregarSala.resources
+G:\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.AgregarSoft.resources
+G:\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.AlumnosEspeciales.resources
+G:\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.AsignarComp.resources
+G:\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.AsignarLocker.resources
+G:\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.BuscarSoft.resources
+G:\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.Consulta.resources
+G:\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.ConsultaResultado.resources
+G:\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.Lista_especiales.resources
+G:\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.locker_info.resources
+G:\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.modificar_sancion.resources
+G:\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.ReactivarEspecial.resources
+G:\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.Desasignar.resources
+G:\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.InfoEquipo.resources
+G:\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.Login.resources
+G:\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.MantenimientoEquipo.resources
+G:\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.agregarUsuario.resources
+G:\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.PantallaPrincipal.resources
+G:\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.Properties.Resources.resources
+G:\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.ReporteVer.resources
+G:\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.Sanciones.resources
+G:\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.SoftwareEquipo.resources
+G:\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.VerSancionados.resources
+G:\AdmLCIv2.0\AdmLCI\obj\x86\Debug\GenerateResource.read.1.tlog
+G:\AdmLCIv2.0\AdmLCI\obj\x86\Debug\GenerateResource.write.1.tlog
+G:\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.exe
+G:\AdmLCIv2.0\AdmLCI\obj\x86\Debug\AdmLCI.pdb
+G:\AdmLCIv2.1\AdmLCI\bin\Debug\AdmLCI.exe.config
+G:\AdmLCIv2.1\AdmLCI\bin\Debug\AdmLCI.exe
+G:\AdmLCIv2.1\AdmLCI\bin\Debug\AdmLCI.pdb
+G:\AdmLCIv2.1\AdmLCI\obj\x86\Debug\ResolveAssemblyReference.cache
+G:\AdmLCIv2.1\AdmLCI\obj\x86\Debug\AdmLCI.AdmnSoftware.resources
+G:\AdmLCIv2.1\AdmLCI\obj\x86\Debug\AdmLCI.admonEquipos.resources
+G:\AdmLCIv2.1\AdmLCI\obj\x86\Debug\AdmLCI.AdmonLockers.resources
+G:\AdmLCIv2.1\AdmLCI\obj\x86\Debug\AdmLCI.admonReporte.resources
+G:\AdmLCIv2.1\AdmLCI\obj\x86\Debug\AdmLCI.admonUsuarios.resources
+G:\AdmLCIv2.1\AdmLCI\obj\x86\Debug\AdmLCI.AgregarEquipo.resources
+G:\AdmLCIv2.1\AdmLCI\obj\x86\Debug\AdmLCI.AgregarLocker.resources
+G:\AdmLCIv2.1\AdmLCI\obj\x86\Debug\AdmLCI.AgregarSala.resources
+G:\AdmLCIv2.1\AdmLCI\obj\x86\Debug\AdmLCI.AgregarSoft.resources
+G:\AdmLCIv2.1\AdmLCI\obj\x86\Debug\AdmLCI.AlumnosEspeciales.resources
+G:\AdmLCIv2.1\AdmLCI\obj\x86\Debug\AdmLCI.AsignarComp.resources
+G:\AdmLCIv2.1\AdmLCI\obj\x86\Debug\AdmLCI.AsignarLocker.resources
+G:\AdmLCIv2.1\AdmLCI\obj\x86\Debug\AdmLCI.BuscarSoft.resources
+G:\AdmLCIv2.1\AdmLCI\obj\x86\Debug\AdmLCI.Consulta.resources
+G:\AdmLCIv2.1\AdmLCI\obj\x86\Debug\AdmLCI.ConsultaResultado.resources
+G:\AdmLCIv2.1\AdmLCI\obj\x86\Debug\AdmLCI.Lista_especiales.resources
+G:\AdmLCIv2.1\AdmLCI\obj\x86\Debug\AdmLCI.locker_info.resources
+G:\AdmLCIv2.1\AdmLCI\obj\x86\Debug\AdmLCI.modificar_sancion.resources
+G:\AdmLCIv2.1\AdmLCI\obj\x86\Debug\AdmLCI.ReactivarEspecial.resources
+G:\AdmLCIv2.1\AdmLCI\obj\x86\Debug\AdmLCI.Desasignar.resources
+G:\AdmLCIv2.1\AdmLCI\obj\x86\Debug\AdmLCI.InfoEquipo.resources
+G:\AdmLCIv2.1\AdmLCI\obj\x86\Debug\AdmLCI.Login.resources
+G:\AdmLCIv2.1\AdmLCI\obj\x86\Debug\AdmLCI.MantenimientoEquipo.resources
+G:\AdmLCIv2.1\AdmLCI\obj\x86\Debug\AdmLCI.agregarUsuario.resources
+G:\AdmLCIv2.1\AdmLCI\obj\x86\Debug\AdmLCI.PantallaPrincipal.resources
+G:\AdmLCIv2.1\AdmLCI\obj\x86\Debug\AdmLCI.Properties.Resources.resources
+G:\AdmLCIv2.1\AdmLCI\obj\x86\Debug\AdmLCI.ReporteVer.resources
+G:\AdmLCIv2.1\AdmLCI\obj\x86\Debug\AdmLCI.Sanciones.resources
+G:\AdmLCIv2.1\AdmLCI\obj\x86\Debug\AdmLCI.SoftwareEquipo.resources
+G:\AdmLCIv2.1\AdmLCI\obj\x86\Debug\AdmLCI.VerSancionados.resources
+G:\AdmLCIv2.1\AdmLCI\obj\x86\Debug\GenerateResource.read.1.tlog
+G:\AdmLCIv2.1\AdmLCI\obj\x86\Debug\GenerateResource.write.1.tlog
+G:\AdmLCIv2.1\AdmLCI\obj\x86\Debug\AdmLCI.exe
+G:\AdmLCIv2.1\AdmLCI\obj\x86\Debug\AdmLCI.pdb
+G:\AdmLCIv2.2\AdmLCI\bin\Debug\AdmLCI.exe.config
+G:\AdmLCIv2.2\AdmLCI\bin\Debug\AdmLCI.exe
+G:\AdmLCIv2.2\AdmLCI\bin\Debug\AdmLCI.pdb
+G:\AdmLCIv2.2\AdmLCI\obj\x86\Debug\ResolveAssemblyReference.cache
+G:\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.AdmnSoftware.resources
+G:\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.admonEquipos.resources
+G:\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.AdmonLockers.resources
+G:\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.admonReporte.resources
+G:\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.admonUsuarios.resources
+G:\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.AgregarEquipo.resources
+G:\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.AgregarLocker.resources
+G:\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.AgregarSala.resources
+G:\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.AgregarSoft.resources
+G:\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.AlumnosEspeciales.resources
+G:\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.AsignarComp.resources
+G:\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.AsignarLocker.resources
+G:\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.BuscarSoft.resources
+G:\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.Consulta.resources
+G:\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.ConsultaResultado.resources
+G:\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.Lista_especiales.resources
+G:\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.locker_info.resources
+G:\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.modificar_sancion.resources
+G:\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.ReactivarEspecial.resources
+G:\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.Desasignar.resources
+G:\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.InfoEquipo.resources
+G:\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.Login.resources
+G:\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.MantenimientoEquipo.resources
+G:\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.agregarUsuario.resources
+G:\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.PantallaPrincipal.resources
+G:\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.Properties.Resources.resources
+G:\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.ReporteVer.resources
+G:\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.Sanciones.resources
+G:\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.SoftwareEquipo.resources
+G:\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.VerSancionados.resources
+G:\AdmLCIv2.2\AdmLCI\obj\x86\Debug\GenerateResource.read.1.tlog
+G:\AdmLCIv2.2\AdmLCI\obj\x86\Debug\GenerateResource.write.1.tlog
+G:\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.exe
+G:\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.pdb
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\bin\Debug\AdmLCI.exe.config
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\bin\Debug\AdmLCI.exe
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\bin\Debug\AdmLCI.pdb
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.AdmnSoftware.resources
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.admonEquipos.resources
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.admonReporte.resources
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.admonUsuarios.resources
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.AgregarEquipo.resources
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.AgregarLocker.resources
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.AgregarSala.resources
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.AgregarSoft.resources
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.AlumnosEspeciales.resources
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.AsignarComp.resources
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.AsignarLocker.resources
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.BuscarSoft.resources
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.Consulta.resources
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.ConsultaResultado.resources
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.Lista_especiales.resources
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.locker_info.resources
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.modificar_sancion.resources
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.Desasignar.resources
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.InfoEquipo.resources
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.Login.resources
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.MantenimientoEquipo.resources
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.agregarUsuario.resources
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.PantallaPrincipal.resources
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.Properties.Resources.resources
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.Sanciones.resources
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.SoftwareEquipo.resources
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.VerSancionados.resources
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.exe
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.pdb
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.ReservarSala.resources
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.Locker.resources
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.Eliminarespecial.resources
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.Eliminarlocker.resources
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.mostrarlista.resources
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\RdlCompile.cache
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\RdlCompile.compiled
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.csproj.ResolveComReference.cache
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.Config.resources
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.AdmnLockers.resources
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.Desasignarlocker.resources
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.Eliminarsoft.resources
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.InactivoEsp.resources
+D:\Visual Studio Projects\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.ReactivarEsp.resources
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\bin\Debug\AdmLCI.exe.config
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\bin\Debug\AdmLCI.exe
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\bin\Debug\AdmLCI.pdb
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.csproj.ResolveComReference.cache
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.AdmnLockers.resources
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.AdmnSoftware.resources
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.admonEquipos.resources
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.admonReporte.resources
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.admonUsuarios.resources
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.AgregarEquipo.resources
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.AgregarLocker.resources
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.AgregarSala.resources
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.AgregarSoft.resources
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.AlumnosEspeciales.resources
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.AsignarComp.resources
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.AsignarLocker.resources
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.BuscarSoft.resources
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.Config.resources
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.Consulta.resources
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.ConsultaResultado.resources
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.Desasignar.resources
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.Desasignarlocker.resources
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.Eliminarespecial.resources
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.Eliminarlocker.resources
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.Eliminarsoft.resources
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.InactivoEsp.resources
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.InfoEquipo.resources
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.Lista_especiales.resources
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.Locker.resources
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.locker_info.resources
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.Login.resources
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.MantenimientoEquipo.resources
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.agregarUsuario.resources
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.modificar_sancion.resources
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.mostrarlista.resources
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.PantallaPrincipal.resources
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.Properties.Resources.resources
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.ReactivarEsp.resources
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.ReservarSala.resources
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.Sanciones.resources
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.SoftwareEquipo.resources
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.VerSancionados.resources
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.csproj.GenerateResource.Cache
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\RdlCompile.cache
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\RdlCompile.compiled
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.exe
+C:\Users\DELL\Desktop\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.pdb
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\bin\Debug\AdmLCI.exe.config
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\bin\Debug\AdmLCI.exe
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\bin\Debug\AdmLCI.pdb
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.csproj.ResolveComReference.cache
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.AdmnLockers.resources
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.AdmnSoftware.resources
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.admonEquipos.resources
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.admonReporte.resources
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.admonUsuarios.resources
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.AgregarEquipo.resources
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.AgregarLocker.resources
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.AgregarSala.resources
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.AgregarSoft.resources
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.AlumnosEspeciales.resources
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.AsignarComp.resources
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.AsignarLocker.resources
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.BuscarSoft.resources
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.Config.resources
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.Consulta.resources
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.ConsultaResultado.resources
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.Desasignar.resources
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.Desasignarlocker.resources
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.Eliminarespecial.resources
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.Eliminarlocker.resources
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.Eliminarsoft.resources
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.InactivoEsp.resources
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.InfoEquipo.resources
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.Lista_especiales.resources
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.Locker.resources
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.locker_info.resources
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.Login.resources
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.MantenimientoEquipo.resources
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.agregarUsuario.resources
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.modificar_sancion.resources
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.mostrarlista.resources
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.PantallaPrincipal.resources
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.Properties.Resources.resources
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.ReactivarEsp.resources
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.ReservarSala.resources
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.Sanciones.resources
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.SoftwareEquipo.resources
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.VerSancionados.resources
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.csproj.GenerateResource.Cache
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\RdlCompile.cache
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\RdlCompile.compiled
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.exe
+C:\Users\DELL\Desktop\Respaldo para formatear\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.pdb
