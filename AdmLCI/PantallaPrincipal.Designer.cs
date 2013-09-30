@@ -608,9 +608,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(696, 73);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(69, 13);
             this.label2.TabIndex = 115;
-            this.label2.Text = "label2";
+            this.label2.Text = "Arieeeeeeel!!";
             // 
             // PantallaPrincipal
             // 
