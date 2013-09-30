@@ -1,6 +1,6 @@
-servidor:148.225.26.18
-usuario:siscalc
-contrasenia:siscalc
-basedatos:lci
+servidor:Win8\\ISI
+usuario:Jose
+contrasenia:203203280
+basedatos:LCIFinal
 contraseniaM:1414
-servidorM:148.225.25.12
+servidorM:148.225.156.192
