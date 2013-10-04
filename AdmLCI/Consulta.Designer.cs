@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Consulta));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tb2 = new System.Windows.Forms.TextBox();
             this.tb1 = new System.Windows.Forms.MaskedTextBox();
             this.lbl2 = new System.Windows.Forms.Label();
             this.lbl1 = new System.Windows.Forms.Label();
@@ -45,7 +46,6 @@
             this.btAceptar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.dgvConsulta = new System.Windows.Forms.DataGridView();
-            this.tb2 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta)).BeginInit();
             this.SuspendLayout();
@@ -69,6 +69,15 @@
             this.groupBox1.Size = new System.Drawing.Size(480, 121);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
+            // 
+            // tb2
+            // 
+            this.tb2.Location = new System.Drawing.Point(366, 43);
+            this.tb2.Name = "tb2";
+            this.tb2.Size = new System.Drawing.Size(109, 20);
+            this.tb2.TabIndex = 20;
+            this.tb2.Visible = false;
+            this.tb2.TextChanged += new System.EventHandler(this.tb2_TextChanged_1);
             // 
             // tb1
             // 
@@ -136,12 +145,12 @@
             // 
             // cbCondicion
             // 
+            this.cbCondicion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCondicion.FormattingEnabled = true;
             this.cbCondicion.Location = new System.Drawing.Point(74, 41);
             this.cbCondicion.Name = "cbCondicion";
             this.cbCondicion.Size = new System.Drawing.Size(212, 21);
             this.cbCondicion.TabIndex = 3;
-            this.cbCondicion.Text = "Seleccione una opción";
             this.cbCondicion.SelectedIndexChanged += new System.EventHandler(this.cbCondicion_SelectedIndexChanged);
             // 
             // label2
@@ -155,6 +164,7 @@
             // 
             // cbConsulta
             // 
+            this.cbConsulta.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbConsulta.FormattingEnabled = true;
             this.cbConsulta.Items.AddRange(new object[] {
             "Equipo",
@@ -164,7 +174,6 @@
             this.cbConsulta.Name = "cbConsulta";
             this.cbConsulta.Size = new System.Drawing.Size(212, 21);
             this.cbConsulta.TabIndex = 1;
-            this.cbConsulta.Text = "Seleccione una opción";
             this.cbConsulta.SelectedIndexChanged += new System.EventHandler(this.cbConsulta_SelectedIndexChanged);
             this.cbConsulta.SelectedValueChanged += new System.EventHandler(this.cbConsulta_SelectedValueChanged);
             // 
@@ -226,15 +235,6 @@
             this.dgvConsulta.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvConsulta.Size = new System.Drawing.Size(561, 360);
             this.dgvConsulta.TabIndex = 25;
-            // 
-            // tb2
-            // 
-            this.tb2.Location = new System.Drawing.Point(366, 43);
-            this.tb2.Name = "tb2";
-            this.tb2.Size = new System.Drawing.Size(109, 20);
-            this.tb2.TabIndex = 20;
-            this.tb2.Visible = false;
-            this.tb2.TextChanged += new System.EventHandler(this.tb2_TextChanged_1);
             // 
             // Consulta
             // 

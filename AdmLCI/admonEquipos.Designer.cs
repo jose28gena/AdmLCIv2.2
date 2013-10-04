@@ -138,6 +138,7 @@
             // 
             // cbOpc
             // 
+            this.cbOpc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbOpc.FormattingEnabled = true;
             this.cbOpc.Items.AddRange(new object[] {
             "Serie CPU",
@@ -148,7 +149,6 @@
             this.cbOpc.Name = "cbOpc";
             this.cbOpc.Size = new System.Drawing.Size(133, 21);
             this.cbOpc.TabIndex = 3;
-            this.cbOpc.Text = "Seleccione una opción";
             // 
             // label1
             // 
@@ -183,7 +183,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btSalir;
-            this.ClientSize = new System.Drawing.Size(816, 426);
+            this.ClientSize = new System.Drawing.Size(816, 425);
             this.Controls.Add(this.tbBuscar);
             this.Controls.Add(this.btBuscar);
             this.Controls.Add(this.label1);

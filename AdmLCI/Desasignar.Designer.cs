@@ -63,6 +63,7 @@
             // 
             // cbMotivo
             // 
+            this.cbMotivo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbMotivo.FormattingEnabled = true;
             this.cbMotivo.Items.AddRange(new object[] {
             "Deseo del usuario",
@@ -72,7 +73,6 @@
             this.cbMotivo.Name = "cbMotivo";
             this.cbMotivo.Size = new System.Drawing.Size(252, 21);
             this.cbMotivo.TabIndex = 27;
-            this.cbMotivo.Text = "Seleccione una opción";
             this.cbMotivo.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // groupBox1
@@ -128,12 +128,12 @@
             // 
             // cbComent
             // 
+            this.cbComent.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbComent.FormattingEnabled = true;
             this.cbComent.Location = new System.Drawing.Point(10, 79);
             this.cbComent.Name = "cbComent";
             this.cbComent.Size = new System.Drawing.Size(252, 21);
             this.cbComent.TabIndex = 32;
-            this.cbComent.Text = "Seleccione una opción";
             // 
             // btCancelar
             // 

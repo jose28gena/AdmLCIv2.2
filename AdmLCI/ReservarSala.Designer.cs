@@ -72,6 +72,7 @@
             // 
             // cbMotivo
             // 
+            this.cbMotivo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbMotivo.FormattingEnabled = true;
             this.cbMotivo.Items.AddRange(new object[] {
             "Mantenimiento regular de sala.",
@@ -80,7 +81,6 @@
             this.cbMotivo.Name = "cbMotivo";
             this.cbMotivo.Size = new System.Drawing.Size(186, 21);
             this.cbMotivo.TabIndex = 11;
-            this.cbMotivo.Text = "Seleccione una opción";
             // 
             // label3
             // 
@@ -93,6 +93,7 @@
             // 
             // cbHasta
             // 
+            this.cbHasta.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbHasta.Enabled = false;
             this.cbHasta.FormattingEnabled = true;
             this.cbHasta.Location = new System.Drawing.Point(105, 80);
@@ -146,6 +147,7 @@
             // 
             // cbDesde
             // 
+            this.cbDesde.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbDesde.Enabled = false;
             this.cbDesde.FormattingEnabled = true;
             this.cbDesde.Location = new System.Drawing.Point(9, 80);

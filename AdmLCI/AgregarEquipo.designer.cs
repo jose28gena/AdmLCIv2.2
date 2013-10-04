@@ -139,6 +139,7 @@
             // 
             // cbTipo
             // 
+            this.cbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTipo.FormattingEnabled = true;
             this.cbTipo.Items.AddRange(new object[] {
             "Individual",
@@ -147,7 +148,6 @@
             this.cbTipo.Name = "cbTipo";
             this.cbTipo.Size = new System.Drawing.Size(127, 21);
             this.cbTipo.TabIndex = 7;
-            this.cbTipo.Text = "Selecione una opción";
             // 
             // label8
             // 
@@ -214,12 +214,12 @@
             // 
             // cbSala
             // 
+            this.cbSala.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSala.FormattingEnabled = true;
             this.cbSala.Location = new System.Drawing.Point(109, 82);
             this.cbSala.Name = "cbSala";
             this.cbSala.Size = new System.Drawing.Size(127, 21);
             this.cbSala.TabIndex = 4;
-            this.cbSala.Text = "Selecione una opción";
             this.cbSala.SelectedIndexChanged += new System.EventHandler(this.cbSala_SelectedIndexChanged);
             // 
             // label3

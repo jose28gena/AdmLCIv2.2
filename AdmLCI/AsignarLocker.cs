@@ -458,6 +458,11 @@ namespace AdmLCI
            
         }
 
+        private void AsignarLocker_Load(object sender, EventArgs e)
+        {
+
+        }
+
 
     }
 }
