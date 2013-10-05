@@ -76,7 +76,6 @@
             this.btConfig = new System.Windows.Forms.Button();
             this.tmrServidor = new System.Windows.Forms.Timer(this.components);
             this.tmrCliente = new System.Windows.Forms.Timer(this.components);
-            this.label2 = new System.Windows.Forms.Label();
             this.groupBox3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.gbOpcSala.SuspendLayout();
@@ -603,21 +602,11 @@
             // 
             this.tmrCliente.Tick += new System.EventHandler(this.tmrCliente_Tick);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(696, 73);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 13);
-            this.label2.TabIndex = 115;
-            this.label2.Text = "Yooooo!!";
-            // 
             // PantallaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1040, 693);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.btConfig);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -706,7 +695,6 @@
         private System.Windows.Forms.Timer tmrServidor;
         private System.Windows.Forms.Timer tmrCliente;
         public System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label2;
     }
 }
 

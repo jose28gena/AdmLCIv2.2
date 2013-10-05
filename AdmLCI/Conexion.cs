@@ -18,10 +18,10 @@ namespace AdmLCI
             //cadenaConexion = "Data Source=DNB-PC\\SQLEXPRESS;Initial Catalog=lciFinal;User ID=denneb;Password=estaciones2;Trusted_Connection=False";
             try
             {
-          //cadenaConexion = "Data Source=" + obtenerServidor() +              ";Initial Catalog=" + obtenerBD() + ";User ID=" + obtenerUsr() + ";Password=" + obtenerPass() + ";Trusted_Connection=False";
+         cadenaConexion = "Data Source=" + obtenerServidor() +              ";Initial Catalog=" + obtenerBD() + ";User ID=" + obtenerUsr() + ";Password=" + obtenerPass() + ";Trusted_Connection=False";
           // esta es la buena
                 
-         cadenaConexion="Data Source=148.225.26.18;Initial Catalog=lci;User ID=siscalc;Password=siscalc;Trusted_Connection=False";
+       //  cadenaConexion="Data Source=148.225.26.18;Initial Catalog=lci;User ID=siscalc;Password=siscalc;Trusted_Connection=False";
       //   cadenaConexion = "Data Source=Win8\\ISI;Initial Catalog=LCIFinal;User ID=Jose;Password=203203280  ;Trusted_Connection=False";
 
                 con = new SqlConnection(cadenaConexion);
