@@ -30,9 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Consulta));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.tb2 = new System.Windows.Forms.TextBox();
             this.tb1 = new System.Windows.Forms.MaskedTextBox();
-            this.lbl2 = new System.Windows.Forms.Label();
             this.lbl1 = new System.Windows.Forms.Label();
             this.dtpInicio = new System.Windows.Forms.DateTimePicker();
             this.dtpFin = new System.Windows.Forms.DateTimePicker();
@@ -46,12 +44,18 @@
             this.btAceptar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.dgvConsulta = new System.Windows.Forms.DataGridView();
+            this.lbl2 = new System.Windows.Forms.Label();
+            this.tb2 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.comboBox2);
+            this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.tb2);
             this.groupBox1.Controls.Add(this.tb1);
             this.groupBox1.Controls.Add(this.lbl2);
@@ -70,18 +74,9 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
-            // tb2
-            // 
-            this.tb2.Location = new System.Drawing.Point(366, 43);
-            this.tb2.Name = "tb2";
-            this.tb2.Size = new System.Drawing.Size(109, 20);
-            this.tb2.TabIndex = 20;
-            this.tb2.Visible = false;
-            this.tb2.TextChanged += new System.EventHandler(this.tb2_TextChanged_1);
-            // 
             // tb1
             // 
-            this.tb1.Location = new System.Drawing.Point(366, 16);
+            this.tb1.Location = new System.Drawing.Point(366, 65);
             this.tb1.Name = "tb1";
             this.tb1.PromptChar = ' ';
             this.tb1.Size = new System.Drawing.Size(108, 20);
@@ -89,20 +84,10 @@
             this.tb1.Visible = false;
             this.tb1.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.tb1_MaskInputRejected);
             // 
-            // lbl2
-            // 
-            this.lbl2.AutoSize = true;
-            this.lbl2.Location = new System.Drawing.Point(300, 44);
-            this.lbl2.Name = "lbl2";
-            this.lbl2.Size = new System.Drawing.Size(28, 13);
-            this.lbl2.TabIndex = 15;
-            this.lbl2.Text = "Sala";
-            this.lbl2.Visible = false;
-            // 
             // lbl1
             // 
             this.lbl1.AutoSize = true;
-            this.lbl1.Location = new System.Drawing.Point(300, 16);
+            this.lbl1.Location = new System.Drawing.Point(300, 65);
             this.lbl1.Name = "lbl1";
             this.lbl1.Size = new System.Drawing.Size(60, 13);
             this.lbl1.TabIndex = 13;
@@ -124,6 +109,7 @@
             this.dtpFin.Name = "dtpFin";
             this.dtpFin.Size = new System.Drawing.Size(127, 20);
             this.dtpFin.TabIndex = 11;
+            this.dtpFin.ValueChanged += new System.EventHandler(this.dtpFin_ValueChanged);
             // 
             // label4
             // 
@@ -236,6 +222,42 @@
             this.dgvConsulta.Size = new System.Drawing.Size(561, 360);
             this.dgvConsulta.TabIndex = 25;
             // 
+            // lbl2
+            // 
+            this.lbl2.AutoSize = true;
+            this.lbl2.Location = new System.Drawing.Point(300, 14);
+            this.lbl2.Name = "lbl2";
+            this.lbl2.Size = new System.Drawing.Size(28, 13);
+            this.lbl2.TabIndex = 15;
+            this.lbl2.Text = "Sala";
+            this.lbl2.Visible = false;
+            // 
+            // tb2
+            // 
+            this.tb2.Location = new System.Drawing.Point(366, 91);
+            this.tb2.Name = "tb2";
+            this.tb2.Size = new System.Drawing.Size(109, 20);
+            this.tb2.TabIndex = 20;
+            this.tb2.Visible = false;
+            this.tb2.TextChanged += new System.EventHandler(this.tb2_TextChanged_1);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(366, 11);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(108, 21);
+            this.comboBox1.TabIndex = 21;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(366, 38);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(108, 21);
+            this.comboBox2.TabIndex = 22;
+            // 
             // Consulta
             // 
             this.AcceptButton = this.btAceptar;
@@ -274,11 +296,13 @@
         private System.Windows.Forms.DateTimePicker dtpInicio;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbl1;
-        private System.Windows.Forms.Label lbl2;
         private System.Windows.Forms.Button btAceptar;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridView dgvConsulta;
         private System.Windows.Forms.MaskedTextBox tb1;
+        private System.Windows.Forms.Label lbl2;
         private System.Windows.Forms.TextBox tb2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }
