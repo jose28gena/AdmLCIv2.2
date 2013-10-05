@@ -70,7 +70,7 @@ namespace AdmLCI
         {
             if (connected)
             {
-                SendMessage();
+                SendMessage(R_SendMessage.Text.ToString());
             }
             else
             {
@@ -103,12 +103,12 @@ namespace AdmLCI
             }
         }
         /// <summary>向服务器端发送信息</summary>
-        private void SendMessage()
+        private void SendMessage(String msg )
         {
             try
             {
-                string s = R_SendMessage.Text.ToString();
-                clientSocket.Send(Encoding.UTF8.GetBytes(s));
+                
+                clientSocket.Send(Encoding.UTF8.GetBytes(msg));
             }
             catch (Exception)
             {
@@ -349,14 +349,6 @@ namespace AdmLCI
         private void PantallaPrincipal_FormClosed(object sender, FormClosedEventArgs e)
         {
 
-            if (Cliente.Connected == true)
-            {
-                inOut.Enviar(Cliente, "SS");
-               
-                //Desbloquear();
-                Cliente.Close();
-            }
-
             login.tbContrasenia.Text = "";
             login.tbUsuario.Text = "";
             login.Show();
@@ -504,13 +496,14 @@ namespace AdmLCI
 
         private void btReservar_Click(object sender, EventArgs e)
         {
-            try
-            {
-                inOut.Enviar(Cliente, "DD" + salas[indiceSalaSeleccionada].nomSala);
+            //try
+            //{
+               SendMessage( "DD" + salas[indiceSalaSeleccionada].nomSala);
                 MessageBox.Show("Sala " + salas[indiceSalaSeleccionada].nomSala + " desbloqueada.");
-            }catch(Exception ee){
-                MessageBox.Show("La sala no pudo ser desbloqueada.");
-            }
+         
+            //}catch(Exception ee){
+            //    MessageBox.Show("La sala no pudo ser desbloqueada.");
+            //}
             
         }
 
@@ -530,14 +523,15 @@ namespace AdmLCI
 
         private void PantallaPrincipal_FormClosing(object sender, FormClosingEventArgs e)
         {
-          
+
+        
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             try
             {
-                inOut.Enviar(Cliente, "BB" + salas[indiceSalaSeleccionada].nomSala);
+             SendMessage( "BB" + salas[indiceSalaSeleccionada].nomSala);
                 MessageBox.Show("Sala " + salas[indiceSalaSeleccionada].nomSala + " Bloqueada.");
             }
             catch (Exception ee)
