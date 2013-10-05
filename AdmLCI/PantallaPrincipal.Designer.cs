@@ -74,8 +74,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.btConfig = new System.Windows.Forms.Button();
-            this.tmrServidor = new System.Windows.Forms.Timer(this.components);
-            this.tmrCliente = new System.Windows.Forms.Timer(this.components);
+            this.R_ReceiveMessage = new System.Windows.Forms.TextBox();
+            this.L_Information = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.R_SendMessage = new System.Windows.Forms.TextBox();
             this.groupBox3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.gbOpcSala.SuspendLayout();
@@ -593,20 +595,47 @@
             this.btConfig.UseVisualStyleBackColor = true;
             this.btConfig.Click += new System.EventHandler(this.btConfig_Click);
             // 
-            // tmrServidor
+            // R_ReceiveMessage
             // 
-            this.tmrServidor.Interval = 3000;
-            this.tmrServidor.Tick += new System.EventHandler(this.tmrServidor_Tick);
+            this.R_ReceiveMessage.Location = new System.Drawing.Point(806, 609);
+            this.R_ReceiveMessage.Name = "R_ReceiveMessage";
+            this.R_ReceiveMessage.Size = new System.Drawing.Size(112, 20);
+            this.R_ReceiveMessage.TabIndex = 116;
             // 
-            // tmrCliente
+            // L_Information
             // 
-            this.tmrCliente.Tick += new System.EventHandler(this.tmrCliente_Tick);
+            this.L_Information.AutoSize = true;
+            this.L_Information.Location = new System.Drawing.Point(717, 591);
+            this.L_Information.Name = "L_Information";
+            this.L_Information.Size = new System.Drawing.Size(71, 13);
+            this.L_Information.TabIndex = 117;
+            this.L_Information.Text = "L_Information";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(719, 609);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(52, 13);
+            this.label2.TabIndex = 118;
+            this.label2.Text = "Mensajes";
+            // 
+            // R_SendMessage
+            // 
+            this.R_SendMessage.Location = new System.Drawing.Point(806, 635);
+            this.R_SendMessage.Name = "R_SendMessage";
+            this.R_SendMessage.Size = new System.Drawing.Size(112, 20);
+            this.R_SendMessage.TabIndex = 119;
             // 
             // PantallaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1040, 693);
+            this.Controls.Add(this.R_SendMessage);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.L_Information);
+            this.Controls.Add(this.R_ReceiveMessage);
             this.Controls.Add(this.btConfig);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -692,9 +721,11 @@
         public System.Windows.Forms.Button btActivar;
         public System.Windows.Forms.Button btBorrarSala;
         public System.Windows.Forms.Button btReservar;
-        private System.Windows.Forms.Timer tmrServidor;
-        private System.Windows.Forms.Timer tmrCliente;
         public System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox R_ReceiveMessage;
+        private System.Windows.Forms.Label L_Information;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox R_SendMessage;
     }
 }
 
