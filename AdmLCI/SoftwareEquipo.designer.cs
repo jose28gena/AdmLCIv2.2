@@ -66,12 +66,12 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(6, 35);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(132, 21);
             this.comboBox1.TabIndex = 1;
-            this.comboBox1.Text = "Seleccione software";
             // 
             // label2
             // 
@@ -140,6 +140,7 @@
             // 
             // comboBox3
             // 
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox3.Enabled = false;
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Location = new System.Drawing.Point(286, 62);
@@ -149,12 +150,12 @@
             // 
             // comboBox2
             // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(286, 35);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(112, 21);
             this.comboBox2.TabIndex = 4;
-            this.comboBox2.Text = "Seleccione equipo";
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // checkBox1
@@ -170,12 +171,12 @@
             // 
             // cbSala
             // 
+            this.cbSala.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSala.FormattingEnabled = true;
             this.cbSala.Location = new System.Drawing.Point(153, 35);
             this.cbSala.Name = "cbSala";
             this.cbSala.Size = new System.Drawing.Size(127, 21);
             this.cbSala.TabIndex = 2;
-            this.cbSala.Text = "Selecione sala";
             this.cbSala.SelectedIndexChanged += new System.EventHandler(this.cbSala_SelectedIndexChanged_1);
             // 
             // panel1

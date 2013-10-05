@@ -60,6 +60,7 @@
             // 
             // cbJust
             // 
+            this.cbJust.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbJust.FormattingEnabled = true;
             this.cbJust.Items.AddRange(new object[] {
             "Formateo de la máquina",
@@ -72,7 +73,6 @@
             this.cbJust.Name = "cbJust";
             this.cbJust.Size = new System.Drawing.Size(264, 21);
             this.cbJust.TabIndex = 9;
-            this.cbJust.Text = "Seleccione una opción";
             // 
             // btCancelar
             // 

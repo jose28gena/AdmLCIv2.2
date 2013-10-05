@@ -206,16 +206,17 @@
             // 
             // cbAnio2
             // 
+            this.cbAnio2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbAnio2.Enabled = false;
             this.cbAnio2.FormattingEnabled = true;
             this.cbAnio2.Location = new System.Drawing.Point(179, 136);
             this.cbAnio2.Name = "cbAnio2";
             this.cbAnio2.Size = new System.Drawing.Size(115, 21);
             this.cbAnio2.TabIndex = 18;
-            this.cbAnio2.Text = "Seleccione un año";
             // 
             // cbMes
             // 
+            this.cbMes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbMes.Enabled = false;
             this.cbMes.FormattingEnabled = true;
             this.cbMes.Items.AddRange(new object[] {
@@ -235,7 +236,6 @@
             this.cbMes.Name = "cbMes";
             this.cbMes.Size = new System.Drawing.Size(115, 21);
             this.cbMes.TabIndex = 17;
-            this.cbMes.Text = "Seleccione un mes";
             // 
             // dtpDia
             // 
@@ -269,13 +269,13 @@
             // 
             // cbAnio
             // 
+            this.cbAnio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbAnio.Enabled = false;
             this.cbAnio.FormattingEnabled = true;
             this.cbAnio.Location = new System.Drawing.Point(81, 84);
             this.cbAnio.Name = "cbAnio";
             this.cbAnio.Size = new System.Drawing.Size(115, 21);
             this.cbAnio.TabIndex = 13;
-            this.cbAnio.Text = "Seleccione un año";
             // 
             // label2
             // 
@@ -310,17 +310,17 @@
             // 
             // cbTipo
             // 
+            this.cbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTipo.FormattingEnabled = true;
             this.cbTipo.Items.AddRange(new object[] {
             "Reporte de acceso al LCI",
             "Reporte de software",
-            "Reporte de equipos"
-            ,"Reporte de reasignaciones"});
+            "Reporte de equipos",
+            "Reporte de reasignaciones"});
             this.cbTipo.Location = new System.Drawing.Point(63, 31);
             this.cbTipo.Name = "cbTipo";
             this.cbTipo.Size = new System.Drawing.Size(211, 21);
             this.cbTipo.TabIndex = 1;
-            this.cbTipo.Text = "Seleccione una opción";
             this.cbTipo.SelectedIndexChanged += new System.EventHandler(this.cbTipo_SelectedIndexChanged);
             // 
             // groupBox2
@@ -335,12 +335,12 @@
             // 
             // cbRestricciones
             // 
+            this.cbRestricciones.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbRestricciones.FormattingEnabled = true;
             this.cbRestricciones.Location = new System.Drawing.Point(9, 19);
             this.cbRestricciones.Name = "cbRestricciones";
             this.cbRestricciones.Size = new System.Drawing.Size(243, 21);
             this.cbRestricciones.TabIndex = 2;
-            this.cbRestricciones.Text = "Seleccione una opción";
             this.cbRestricciones.SelectedIndexChanged += new System.EventHandler(this.cbRestricciones_SelectedIndexChanged);
             // 
             // btCancelar

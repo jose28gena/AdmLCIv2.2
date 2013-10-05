@@ -15,6 +15,7 @@ namespace AdmLCI
         string[] opcConEst = { "Visitas" };
         string[] opcConHist = { "Lockers agregados","Lockers eliminados","Equipos agregados","Equipos eliminados","Salas agregadas","Salas eliminadas" };
         Validacion v = new Validacion();
+        DataTable dts;
 
         public Consulta()
         {
@@ -34,7 +35,12 @@ namespace AdmLCI
                 lbl2.Visible = true;
                 tb2.Visible = true;
                 tb1.Visible = true;
-                
+                comboBox1.Visible = true;
+                Conexion con = new Conexion();
+
+                comboBox1.DataSource = con.consultaLibreDT("Select * from Sala");
+                comboBox1.ValueMember = "sa_id";
+                comboBox1.DisplayMember = "sa_letra";
                 
                 for (int i = 0; i < opcConEq.Length; i++)
                     cbCondicion.Items.Add(opcConEq[i]);
@@ -85,7 +91,7 @@ namespace AdmLCI
             if (cbConsulta.SelectedItem.ToString().Equals("Equipo")) {
                 if (cbCondicion.SelectedItem.ToString().Equals("Uso del equipo"))
                 {
-                    if (tb1.Text.Trim().Equals("") || tb2.Text.Trim().Equals(""))
+                    if (comboBox2.GetItemText(comboBox2.SelectedItem).Equals(""))
                     {
                         MessageBox.Show("Debe escribir la sala y el número de equipo.");
                         return;
@@ -94,9 +100,9 @@ namespace AdmLCI
                     exp = tb2.Text + tb1.Text;
                     //MessageBox.Show(exp);
                     //MessageBox.Show("" + dtpInicio.Value.Year + "-" + dtpInicio.Value.Month + "-" + dtpInicio.Value.Day);
-                    info = con.consultaLibreDT("select UsoEquipo.ueq_fecha as 'Fecha', ueq_tiempo/60 as 'Tiempo',UsoEquipo.est_expediente as 'Expediente', UsuarioLCI.est_nombre as 'Nombre' from UsoEquipo, UsuarioLCI, InvEquipo where UsoEquipo.est_expediente=UsuarioLCI.est_expediente and UsoEquipo.ieq_id=InvEquipo.ieq_id and InvEquipo.ieq_id=(select ieq_id from InvEquipo inner join Sala on InvEquipo.sa_id=Sala.sa_id where InvEquipo.ieq_numero=" + tb1.Text + " and Sala.sa_letra='" + tb2.Text + "') and UsoEquipo.ueq_fecha between '" + dtpInicio.Value.Day + "-" + dtpInicio.Value.Month + "-" + dtpInicio.Value.Year + "' and '" + dtpFin.Value.Day + "-" + dtpFin.Value.Month + "-" + dtpFin.Value.Year + "'");
+                    info = con.consultaLibreDT("select UsoEquipo.ueq_fecha as 'Fecha', ueq_tiempo/60 as 'Tiempo',UsoEquipo.est_expediente as 'Expediente', UsuarioLCI.est_nombre as 'Nombre' from UsoEquipo, UsuarioLCI, InvEquipo where UsoEquipo.est_expediente=UsuarioLCI.est_expediente and UsoEquipo.ieq_id=InvEquipo.ieq_id and InvEquipo.ieq_id=(select ieq_id from InvEquipo inner join Sala on InvEquipo.sa_id=Sala.sa_id where InvEquipo.ieq_numero=" + comboBox2.GetItemText(comboBox2.SelectedItem) + " and Sala.sa_letra='" + comboBox1.GetItemText(comboBox1.SelectedItem) + "') and UsoEquipo.ueq_fecha between '" + dtpInicio.Value.Day + "-" + dtpInicio.Value.Month + "-" + dtpInicio.Value.Year + "' and '" + dtpFin.Value.Day + "-" + dtpFin.Value.Month + "-" + dtpFin.Value.Year + "'");
                     if (info.Rows.Count == 0) {
-                        info = con.consultaLibreDT("select UsoEquipo.ueq_fecha as 'Fecha', ueq_tiempo/60 as 'Tiempo',UsoEquipo.ales_id as 'ID Alumno especial', AlumnoEspecial.ales_nombre as 'Nombre', AlumnoEspecial.ales_ape_pat as 'Apellido paterno', AlumnoEspecial.ales_ape_mat as 'Apellido materno' from UsoEquipo, AlumnoEspecial, InvEquipo where UsoEquipo.ales_id=AlumnoEspecial.ales_id and UsoEquipo.ieq_id=InvEquipo.ieq_id and InvEquipo.ieq_id=(select ieq_id from InvEquipo inner join Sala on InvEquipo.sa_id=Sala.sa_id where InvEquipo.ieq_numero=" + tb1.Text + " and Sala.sa_letra='" + tb2.Text + "') and UsoEquipo.ueq_fecha between '" + dtpInicio.Value.Day + "-" + dtpInicio.Value.Month + "-" + dtpInicio.Value.Year + "' and '" + dtpFin.Value.Day + "-" + dtpFin.Value.Month + "-" + dtpFin.Value.Year + "'");
+                        info = con.consultaLibreDT("select UsoEquipo.ueq_fecha as 'Fecha', ueq_tiempo/60 as 'Tiempo',UsoEquipo.ales_id as 'ID Alumno especial', AlumnoEspecial.ales_nombre as 'Nombre', AlumnoEspecial.ales_ape_pat as 'Apellido paterno', AlumnoEspecial.ales_ape_mat as 'Apellido materno' from UsoEquipo, AlumnoEspecial, InvEquipo where UsoEquipo.ales_id=AlumnoEspecial.ales_id and UsoEquipo.ieq_id=InvEquipo.ieq_id and InvEquipo.ieq_id=(select ieq_id from InvEquipo inner join Sala on InvEquipo.sa_id=Sala.sa_id where InvEquipo.ieq_numero=" + comboBox2.GetItemText(comboBox2.SelectedItem) + " and Sala.sa_letra='" + comboBox1.GetItemText(comboBox1.SelectedItem) + "') and UsoEquipo.ueq_fecha between '" + dtpInicio.Value.Day + "-" + dtpInicio.Value.Month + "-" + dtpInicio.Value.Year + "' and '" + dtpFin.Value.Day + "-" + dtpFin.Value.Month + "-" + dtpFin.Value.Year + "'");
                         tipo="Uso Equipo";
                         
                     }
@@ -104,7 +110,7 @@ namespace AdmLCI
                 else if (cbCondicion.SelectedItem.ToString().Equals("Mantenimiento del equipo"))
                 {
 
-                    info = con.consultaLibreDT("select mnt_fecha as 'Fecha', mnt_justificacion as 'Justificación', mnt_detalles as 'Detalles' from mntoeq inner join InvEquipo on InvEquipo.ieq_id=mntoeq.ieq_id where mntoeq.ieq_id=(select ieq_id from InvEquipo inner join Sala on InvEquipo.sa_id=Sala.sa_id where InvEquipo.ieq_numero=" + tb1.Text + " and Sala.sa_letra='" + tb2.Text + "') and mntoeq.mnt_fecha between '" + dtpInicio.Value.Day + "-" + dtpInicio.Value.Month + "-" + dtpInicio.Value.Year + "' and '" + dtpFin.Value.AddDays(1).Day + "-" + dtpFin.Value.AddDays(1).Month + "-" + dtpFin.Value.AddDays(1).Year + "'");
+                    info = con.consultaLibreDT("select mnt_fecha as 'Fecha', mnt_justificacion as 'Justificación', mnt_detalles as 'Detalles' from mntoeq inner join InvEquipo on InvEquipo.ieq_id=mntoeq.ieq_id where mntoeq.ieq_id=(select ieq_id from InvEquipo inner join Sala on InvEquipo.sa_id=Sala.sa_id where InvEquipo.ieq_numero=" + comboBox2.GetItemText(comboBox2.SelectedItem) + " and Sala.sa_letra='" + comboBox1.GetItemText(comboBox1.SelectedItem) + "') and mntoeq.mnt_fecha between '" + dtpInicio.Value.Day + "-" + dtpInicio.Value.Month + "-" + dtpInicio.Value.Year + "' and '" + dtpFin.Value.AddDays(1).Day + "-" + dtpFin.Value.AddDays(1).Month + "-" + dtpFin.Value.AddDays(1).Year + "'");
                     tipo="Mantenimiento Equipo";
                     exp = tb2.Text + tb1.Text;
                 }
@@ -167,7 +173,10 @@ namespace AdmLCI
 
         private void Consulta_Load(object sender, EventArgs e)
         {
-
+            dtpFin.MaxDate = DateTime.Now.AddDays(1);
+            dtpInicio.MaxDate = DateTime.Now.AddDays(-1);
+            comboBox1.Visible = false;
+            comboBox2.Visible = false;
         }
 
         private void cbCondicion_SelectedIndexChanged(object sender, EventArgs e)
@@ -231,6 +240,29 @@ namespace AdmLCI
         private void tb1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
 
+        }
+
+        private void dtpFin_ValueChanged(object sender, EventArgs e)
+        {
+            dtpInicio.MaxDate = dtpFin.Value.AddDays(-1);
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            comboBox2.Items.Clear();
+
+
+            Conexion con = new Conexion();
+
+            String query =
+              "SELECT ieq_numero FROM  InvEquipo INNER JOIN Sala ON (InvEquipo.sa_id= Sala.sa_id) WHERE sa_letra='" + comboBox1.GetItemText(comboBox1.SelectedItem) + "' ORDER BY ieq_numero";
+            comboBox2.Visible = true;
+            dts = con.consultaLibreDT(query);
+            for (int i = 0; i < dts.Rows.Count; i++)
+            {
+                comboBox2.Items.Add(dts.Rows[i]["ieq_numero"].ToString());
+            }
+            comboBox2.Text = "";
         }
     }
 }

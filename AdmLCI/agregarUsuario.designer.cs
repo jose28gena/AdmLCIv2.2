@@ -147,6 +147,7 @@
             // cbTipoUsuario
             // 
             this.cbTipoUsuario.DisplayMember = "Administracion";
+            this.cbTipoUsuario.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTipoUsuario.FormattingEnabled = true;
             this.cbTipoUsuario.Items.AddRange(new object[] {
             "Administrador",
@@ -156,7 +157,6 @@
             this.cbTipoUsuario.Name = "cbTipoUsuario";
             this.cbTipoUsuario.Size = new System.Drawing.Size(140, 21);
             this.cbTipoUsuario.TabIndex = 7;
-            this.cbTipoUsuario.Text = "Seleccione una opción";
             // 
             // label8
             // 
