@@ -4,3 +4,4 @@ contrasenia:admin
 basedatos:LCIFinal
 contraseniaM:1414
 servidorM:192.168.0.105
+puertoM:10001
