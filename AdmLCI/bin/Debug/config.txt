@@ -1,7 +1,7 @@
-servidor:WIN8\ISI
+servidor:ARIEL-DV672X\SQL2012
 usuario:admin
 contrasenia:admin
 basedatos:LCIFinal
-contraseniaM:1414
+contraseniaM:violin92
 servidorM:192.168.0.105
 puertoM:10001
