@@ -258,6 +258,7 @@ namespace AdmLCI
               "SELECT ieq_numero FROM  InvEquipo INNER JOIN Sala ON (InvEquipo.sa_id= Sala.sa_id) WHERE sa_letra='" + comboBox1.GetItemText(comboBox1.SelectedItem) + "' ORDER BY ieq_numero";
             comboBox2.Visible = true;
             dts = con.consultaLibreDT(query);
+            
             for (int i = 0; i < dts.Rows.Count; i++)
             {
                 comboBox2.Items.Add(dts.Rows[i]["ieq_numero"].ToString());
