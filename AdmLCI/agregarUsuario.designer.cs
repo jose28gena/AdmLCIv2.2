@@ -63,7 +63,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 18);
+            this.label3.Location = new System.Drawing.Point(11, 18);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(46, 13);
             this.label3.TabIndex = 27;
@@ -96,15 +96,15 @@
             // 
             // tbApellidoM
             // 
-            this.tbApellidoM.Location = new System.Drawing.Point(121, 167);
+            this.tbApellidoM.Location = new System.Drawing.Point(123, 167);
             this.tbApellidoM.Name = "tbApellidoM";
-            this.tbApellidoM.Size = new System.Drawing.Size(138, 20);
+            this.tbApellidoM.Size = new System.Drawing.Size(137, 20);
             this.tbApellidoM.TabIndex = 6;
             this.tbApellidoM.TextChanged += new System.EventHandler(this.tbApellidoM_TextChanged);
             // 
             // tbApellidoP
             // 
-            this.tbApellidoP.Location = new System.Drawing.Point(122, 139);
+            this.tbApellidoP.Location = new System.Drawing.Point(123, 139);
             this.tbApellidoP.Name = "tbApellidoP";
             this.tbApellidoP.Size = new System.Drawing.Size(137, 20);
             this.tbApellidoP.TabIndex = 5;
@@ -114,22 +114,22 @@
             // 
             this.tbNombre.Location = new System.Drawing.Point(123, 110);
             this.tbNombre.Name = "tbNombre";
-            this.tbNombre.Size = new System.Drawing.Size(136, 20);
+            this.tbNombre.Size = new System.Drawing.Size(137, 20);
             this.tbNombre.TabIndex = 4;
             this.tbNombre.TextChanged += new System.EventHandler(this.tbNombre_TextChanged);
             // 
             // tbConfirmarContrasenia
             // 
-            this.tbConfirmarContrasenia.Location = new System.Drawing.Point(127, 77);
+            this.tbConfirmarContrasenia.Location = new System.Drawing.Point(123, 77);
             this.tbConfirmarContrasenia.Name = "tbConfirmarContrasenia";
             this.tbConfirmarContrasenia.PasswordChar = '*';
-            this.tbConfirmarContrasenia.Size = new System.Drawing.Size(132, 20);
+            this.tbConfirmarContrasenia.Size = new System.Drawing.Size(137, 20);
             this.tbConfirmarContrasenia.TabIndex = 3;
             this.tbConfirmarContrasenia.TextChanged += new System.EventHandler(this.tbConfirmarContrasenia_TextChanged);
             // 
             // tbContrasenia
             // 
-            this.tbContrasenia.Location = new System.Drawing.Point(122, 46);
+            this.tbContrasenia.Location = new System.Drawing.Point(123, 46);
             this.tbContrasenia.Name = "tbContrasenia";
             this.tbContrasenia.PasswordChar = '*';
             this.tbContrasenia.Size = new System.Drawing.Size(137, 20);
@@ -153,9 +153,9 @@
             "Administrador",
             "Supervisor",
             "Asesor"});
-            this.cbTipoUsuario.Location = new System.Drawing.Point(121, 196);
+            this.cbTipoUsuario.Location = new System.Drawing.Point(123, 196);
             this.cbTipoUsuario.Name = "cbTipoUsuario";
-            this.cbTipoUsuario.Size = new System.Drawing.Size(140, 21);
+            this.cbTipoUsuario.Size = new System.Drawing.Size(137, 21);
             this.cbTipoUsuario.TabIndex = 7;
             // 
             // label8
@@ -179,7 +179,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(275, 16);
+            this.pictureBox1.Location = new System.Drawing.Point(280, 7);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(43, 59);
             this.pictureBox1.TabIndex = 39;

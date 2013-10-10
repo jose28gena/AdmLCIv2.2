@@ -59,6 +59,11 @@ namespace AdmLCI
             a.press_buttons(sender, e);
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
  
       
 
