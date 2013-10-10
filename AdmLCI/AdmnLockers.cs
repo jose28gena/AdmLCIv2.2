@@ -248,6 +248,7 @@ namespace AdmLCI
                     fecha = ds.Rows[i][2].ToString();
                     fecha2 = ds.Rows[i][3].ToString();
                     lockers[i] = new Locker();
+                  
                     tool[i] = new Tooltipslock();
                     lockers[i].cambiarPosicion(X, y);
                     tool[i].SetToolTip(lockers[i],
@@ -263,6 +264,7 @@ namespace AdmLCI
                             ds.Rows[i][3].ToString(), ds.Rows[i][5].ToString(),ds.Rows[i][4].ToString());
                         
                      lockers[i].Click += lockers_Click;
+              
                     panel2.Controls.Add(lockers[i]);
                     X = X + 80;
                 }

@@ -78,6 +78,7 @@
             this.L_Information = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.R_SendMessage = new System.Windows.Forms.TextBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupBox3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.gbOpcSala.SuspendLayout();
@@ -627,6 +628,11 @@
             this.R_SendMessage.Size = new System.Drawing.Size(112, 20);
             this.R_SendMessage.TabIndex = 119;
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // PantallaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -659,7 +665,7 @@
             this.Name = "PantallaPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Administrador";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PantallaPrincipal_FormClosing);
+            
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.PantallaPrincipal_FormClosed);
             this.Load += new System.EventHandler(this.PantallaPrincipal_Load);
             this.groupBox3.ResumeLayout(false);
@@ -726,6 +732,7 @@
         private System.Windows.Forms.Label L_Information;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox R_SendMessage;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

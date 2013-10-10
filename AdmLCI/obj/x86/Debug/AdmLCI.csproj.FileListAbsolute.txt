@@ -514,3 +514,4 @@ C:\Users\DELL\Documents\GitHub\AdmLCIv2.2\AdmLCI\obj\x86\Debug\RdlCompile.cache
 C:\Users\DELL\Documents\GitHub\AdmLCIv2.2\AdmLCI\obj\x86\Debug\RdlCompile.compiled
 C:\Users\DELL\Documents\GitHub\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.exe
 C:\Users\DELL\Documents\GitHub\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.pdb
+C:\Users\DELL\Documents\GitHub\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.csprojResolveAssemblyReference.cache
