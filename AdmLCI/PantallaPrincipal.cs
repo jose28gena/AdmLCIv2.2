@@ -565,6 +565,7 @@ namespace AdmLCI
         {
 
         }
+
      
         public void actualizar_pantalla(){
             String s = msg;
