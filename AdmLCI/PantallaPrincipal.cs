@@ -25,7 +25,7 @@ namespace AdmLCI
         int indiceSalaSeleccionada = -1; //Esta variable contendra el índice de la sala que está activa en la ventana principal.
         Sesion sesion;
         Login login;
-
+        bool flag = true;
      
         //Cliente-Servidor
         public static TcpClient Cliente = new TcpClient();
@@ -37,6 +37,7 @@ namespace AdmLCI
         private int initPort;
         private Thread receiveThread;
         private static byte[] message = new byte[1024];
+        String msg="";
        
       
         //Código del boton btnSignIn
@@ -77,21 +78,31 @@ namespace AdmLCI
                 MessageBox.Show("Has not deteive server to connect...", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
-        /// <summary>从服务器端接收信息</summary>
+   
         private void ReceiveMessage()
         {
-            bool flag = true;
+             flag = true;
             while (flag)
             {
                 try
                 {
                     int count = clientSocket.Receive(message);
-                    R_ReceiveMessage.Text = R_ReceiveMessage.Text + Encoding.UTF8.GetString(message, 0, count);
+                    msg = Encoding.UTF8.GetString(message, 0, count);
+                   
+                    R_ReceiveMessage.Text =msg;
                     R_ReceiveMessage.Text = R_ReceiveMessage.Text + "\n";
+         
+                
                     R_ReceiveMessage.SelectionStart = R_ReceiveMessage.TextLength;//让垂直滚动条一直位于底部
+                   
+                    
+            
+            
+                   
                 }
                 catch (Exception)
                 {
+                 
                     R_ReceiveMessage.Text = R_ReceiveMessage.Text + "The server is closed.\nTry to connect ...";
                     R_ReceiveMessage.Text = R_ReceiveMessage.Text + "\n";
                     R_ReceiveMessage.SelectionStart = R_ReceiveMessage.TextLength;//让垂直滚动条一直位于底部
@@ -348,7 +359,13 @@ namespace AdmLCI
 
         private void PantallaPrincipal_FormClosed(object sender, FormClosedEventArgs e)
         {
-
+            Random a = new Random();
+            clientSocket.Close();
+         
+            Thread.Sleep(a.Next(200, 5600));
+           
+          
+    
             login.tbContrasenia.Text = "";
             login.tbUsuario.Text = "";
             login.Show();
@@ -521,14 +538,12 @@ namespace AdmLCI
         }
 
 
-        private void PantallaPrincipal_FormClosing(object sender, FormClosingEventArgs e)
-        {
-
-        
-        }
+ 
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+
             try
             {
              SendMessage( "BB" + salas[indiceSalaSeleccionada].nomSala);
@@ -545,9 +560,44 @@ namespace AdmLCI
 
         }
 
+<<<<<<< HEAD
         private void pnContSala_Paint(object sender, PaintEventArgs e)
         {
 
         }
+=======
+     
+        public void actualizar_pantalla(){
+            String s = msg;
+           
+            if (salas != null && indiceSalaSeleccionada >= 0)
+            {
+
+                if (salas[indiceSalaSeleccionada].nomSala.Equals(msg.ToString()))
+                {
+                    msg = "";
+                    MessageBox.Show("Se actualizo la sala "+ s);
+                    limpiarPantalla();
+     
+                    salas[indiceSalaSeleccionada].cargarMesas();
+                  
+                  
+                }
+            }
+
+           
+
+        
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            actualizar_pantalla();
+
+        }
+
+       
+
+>>>>>>> origin/master
     }
 }

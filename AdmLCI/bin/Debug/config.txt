@@ -2,6 +2,11 @@ servidor:ARIEL-DV672X\SQL2012
 usuario:admin
 contrasenia:admin
 basedatos:LCIFinal
+<<<<<<< HEAD
 contraseniaM:violin92
 servidorM:192.168.43.119
+=======
+contraseniaM:1414
+servidorM:127.0.0.1
+>>>>>>> origin/master
 puertoM:10001
