@@ -23,6 +23,7 @@ namespace AdmLCI
         public void cargarUsuarios() {
             dtUsr = con.consultaLibreDT("SELECT Usuario.usr_id AS 'ID',Usuario.usr_nombre AS 'Nombre', Usuario.usr_usuario AS 'Usuario',Tipo_Usuario.tpusr_descr AS 'Tipo de usuario' FROM Usuario INNER JOIN Tipo_Usuario on Usuario.tpusr_id=Tipo_Usuario.tpusr_id");
             dgvUsr.DataSource = dtUsr;
+            dgvUsr.Columns[0].Visible = false;
         }
 
         private void button2_Click(object sender, EventArgs e)

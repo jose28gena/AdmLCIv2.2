@@ -112,6 +112,7 @@
             this.pnContSala.Name = "pnContSala";
             this.pnContSala.Size = new System.Drawing.Size(597, 589);
             this.pnContSala.TabIndex = 106;
+            this.pnContSala.Paint += new System.Windows.Forms.PaintEventHandler(this.pnContSala_Paint);
             // 
             // groupBox3
             // 

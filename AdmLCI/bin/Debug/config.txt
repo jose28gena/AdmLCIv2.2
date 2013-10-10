@@ -3,5 +3,5 @@ usuario:admin
 contrasenia:admin
 basedatos:LCIFinal
 contraseniaM:violin92
-servidorM:192.168.0.105
+servidorM:192.168.43.119
 puertoM:10001

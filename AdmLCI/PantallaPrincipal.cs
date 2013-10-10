@@ -544,5 +544,10 @@ namespace AdmLCI
         {
 
         }
+
+        private void pnContSala_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

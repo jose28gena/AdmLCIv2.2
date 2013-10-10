@@ -260,13 +260,20 @@ namespace AdmLCI
         {
             tbExpediente.Text = v.validar(tbExpediente.Text);
             tbExpediente.Select(tbExpediente.Text.Length, 0);
+            
         }
 
         private void tbExpediente_KeyPress(object sender, KeyPressEventArgs e)
         {
+
             if (e.KeyChar == Convert.ToChar(Keys.Enter))
             {
-                bool banderaNum = true;
+                BuscarExp();
+            }
+        }
+        public void BuscarExp()
+        {
+            bool banderaNum = true;
                 try
                 {
                     int exp = Convert.ToInt32(tbExpediente.Text);
@@ -381,7 +388,7 @@ namespace AdmLCI
                 }
                     
             
-            }
+            
         }
 
         private void tbNombre_TextChanged(object sender, EventArgs e)
@@ -402,6 +409,18 @@ namespace AdmLCI
             tbHrsDisp.Text = "";
             tbNombre.Text = "";
             especial = false;
+        }
+
+        private void btBuscar_Click(object sender, EventArgs e)
+        {
+            if (tbExpediente.Text.Length == 9)
+            {
+                BuscarExp();
+            }
+            else
+            {
+                MessageBox.Show("Introduzca correctamente el expediente");
+            }
         }
     }
 }
