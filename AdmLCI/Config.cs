@@ -19,7 +19,7 @@ namespace AdmLCI
 //contrasenia:estaciones2
 //basedatos:lciFinal
 //contraseniaM:1414
-        string[] contenido = new string[6];
+        string[] contenido = new string[7];
         public Config()
         {
             InitializeComponent();
@@ -72,6 +72,11 @@ namespace AdmLCI
                         tbServidorMago.Text = line.Substring(line.IndexOf(":") + 1);
                         contenido[cont] = "servidorM:" + tbServidorMago.Text;
                     }
+                    else if (line.StartsWith("puertoM:"))
+                    {
+                        puerto.Text = line.Substring(line.IndexOf(":") + 1);
+                        contenido[cont] = "puertoM:" + tbServidorMago.Text;
+                    }
                     //MessageBox.Show(contenido[cont]);
                     cont++;
                     //Read the next line
@@ -92,11 +97,7 @@ namespace AdmLCI
             }
         }
         
-        private void Config_Load(object sender, EventArgs e)
-        {
-
-        }
-
+     
         private void btAceptar_Click(object sender, EventArgs e)
         {
 
@@ -144,6 +145,11 @@ namespace AdmLCI
                     {
                        
                         contenido[i] = "servidorM:" + tbServidorMago.Text;
+                    }
+                    else if (contenido[i].StartsWith("puertoM:"))
+                    {
+
+                        contenido[i] = "puertoM:" + puerto.Text;
                     }
 
 

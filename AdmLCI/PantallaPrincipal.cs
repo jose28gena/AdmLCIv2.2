@@ -557,6 +557,7 @@ namespace AdmLCI
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
+<<<<<<< HEAD
 
         }
 
@@ -587,6 +588,49 @@ namespace AdmLCI
 
            
 
+=======
+
+        }
+
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+>>>>>>> b0bddc0e8911d1f3ced18a32fe2bfffc8b835285
+        private void pnContSala_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> b0bddc0e8911d1f3ced18a32fe2bfffc8b835285
+>>>>>>> b82c39fd041eb98c2369e0df49ada2de8deebc6c
+     
+        public void actualizar_pantalla(){
+            String s = msg;
+           
+            if (salas != null && indiceSalaSeleccionada >= 0)
+            {
+
+                if (salas[indiceSalaSeleccionada].nomSala.Equals(msg.ToString()))
+                {
+                    msg = "";
+                    MessageBox.Show("Se actualizo la sala "+ s);
+                    limpiarPantalla();
+     
+                    salas[indiceSalaSeleccionada].cargarMesas();
+                  
+                  
+                }
+            }
+
+           
+
+>>>>>>> b20ff36953d7235954e75e3976c96657ea60796a
         
         }
 
@@ -596,5 +640,15 @@ namespace AdmLCI
 
         }
 
+<<<<<<< HEAD
+=======
+       
+
+<<<<<<< HEAD
+
+=======
+>>>>>>> origin/master
+>>>>>>> b0bddc0e8911d1f3ced18a32fe2bfffc8b835285
+>>>>>>> b20ff36953d7235954e75e3976c96657ea60796a
     }
 }
