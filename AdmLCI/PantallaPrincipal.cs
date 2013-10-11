@@ -7,9 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using AdmLCI.Properties;
-using System.Net.Sockets;
 using System.Net;
 using System.IO;
+using System.Net.Sockets;
+using System.Threading;
 
 
 namespace AdmLCI
@@ -24,15 +25,108 @@ namespace AdmLCI
         int indiceSalaSeleccionada = -1; //Esta variable contendra el índice de la sala que está activa en la ventana principal.
         Sesion sesion;
         Login login;
+        bool flag = true;
      
         //Cliente-Servidor
         public static TcpClient Cliente = new TcpClient();
         public static String Recibido = "";
         public string IP;
-
-        byte[] data;
+        private Socket clientSocket;
+        private bool connected = false;
+        private IPAddress initIP;
+        private int initPort;
+        private Thread receiveThread;
+        private static byte[] message = new byte[1024];
+        String msg="";
+       
+      
         //Código del boton btnSignIn
         //(Se crea dándole doble click al botón)
+        private void InitNetWork()
+        {
+            IPEndPoint remoteEP = new IPEndPoint(initIP, initPort);
+            clientSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+            while (!connected)
+            {
+                try
+                {
+                    L_Information.Text = "Connecting...";
+                    clientSocket.Connect(remoteEP);
+                    L_Information.Text = "Success connected...";
+                    connected = true;
+                }
+                catch (Exception)
+                {
+                    L_Information.Text = "Try to connect again.";
+                }
+                Thread.Sleep(1000);
+            }
+            Control.CheckForIllegalCrossThreadCalls = false;
+            receiveThread = new Thread(new ThreadStart(ReceiveMessage));
+            receiveThread.IsBackground = true;
+            receiveThread.Start();
+        }
+        /// <summary>【发送】按钮的Click事件</summary>
+        private void B_SendMessage_Click(object sender, EventArgs e)
+        {
+            if (connected)
+            {
+                SendMessage(R_SendMessage.Text.ToString());
+            }
+            else
+            {
+                MessageBox.Show("Has not deteive server to connect...", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+   
+        private void ReceiveMessage()
+        {
+             flag = true;
+            while (flag)
+            {
+                try
+                {
+                    int count = clientSocket.Receive(message);
+                    msg = Encoding.UTF8.GetString(message, 0, count);
+                   
+                    R_ReceiveMessage.Text =msg;
+                    R_ReceiveMessage.Text = R_ReceiveMessage.Text + "\n";
+         
+                
+                    R_ReceiveMessage.SelectionStart = R_ReceiveMessage.TextLength;//让垂直滚动条一直位于底部
+                   
+                    
+            
+            
+                   
+                }
+                catch (Exception)
+                {
+                 
+                    R_ReceiveMessage.Text = R_ReceiveMessage.Text + "The server is closed.\nTry to connect ...";
+                    R_ReceiveMessage.Text = R_ReceiveMessage.Text + "\n";
+                    R_ReceiveMessage.SelectionStart = R_ReceiveMessage.TextLength;//让垂直滚动条一直位于底部
+                    clientSocket.Shutdown(SocketShutdown.Both);
+                    flag = false;
+                    connected = false;
+                    InitNetWork();
+                }
+            }
+        }
+        /// <summary>向服务器端发送信息</summary>
+        private void SendMessage(String msg )
+        {
+            try
+            {
+                
+                clientSocket.Send(Encoding.UTF8.GetBytes(msg));
+            }
+            catch (Exception)
+            {
+                clientSocket.Shutdown(SocketShutdown.Both);
+                clientSocket.Close();
+            }
+        }
 
         public PantallaPrincipal()
         {            
@@ -80,8 +174,10 @@ namespace AdmLCI
         }
 
 
-        public string obtenerIP() {
+        public string [] obtenerIP() {
             String line = "";
+            
+                String[] pp = new String[2];
             try
             {
                 //Pass the file path and file name to the StreamReader constructor
@@ -90,15 +186,19 @@ namespace AdmLCI
                 //Read the first line of text
                 line = sr.ReadLine();
 
-                string ip = "127.0.0.1";
                 //Continue to read until you reach end of file
                 while (line != null)
                 {
 
                     if (line.StartsWith("servidorM:"))
                     {
-                       ip= line.Substring(line.IndexOf(":") + 1);
+                       pp[0]= line.Substring(line.IndexOf(":") + 1);
                      //  MessageBox.Show(ip);
+                    }
+                    if (line.StartsWith("puertoM:"))
+                    {
+                        pp[1] = line.Substring(line.IndexOf(":") + 1);
+                        //  MessageBox.Show(ip);
                     }
                     
                     //Read the next line
@@ -108,7 +208,7 @@ namespace AdmLCI
 
                 //close the file
                 sr.Close();
-                return ip;
+                return pp;
                 //Console.ReadLine();
             }
             catch (Exception e)
@@ -119,7 +219,7 @@ namespace AdmLCI
             {
                 //Console.WriteLine("Executing finally block.");
             }
-            return "localhost";
+            return pp;
         }
       
 
@@ -259,15 +359,13 @@ namespace AdmLCI
 
         private void PantallaPrincipal_FormClosed(object sender, FormClosedEventArgs e)
         {
-
-            if (Cliente.Connected == true)
-            {
-                inOut.Enviar(Cliente, "SS");
-               
-                //Desbloquear();
-                Cliente.Close();
-            }
-
+            Random a = new Random();
+            clientSocket.Close();
+         
+            Thread.Sleep(a.Next(200, 5600));
+           
+          
+    
             login.tbContrasenia.Text = "";
             login.tbUsuario.Text = "";
             login.Show();
@@ -406,18 +504,23 @@ namespace AdmLCI
 
         private void PantallaPrincipal_Load(object sender, EventArgs e)
         {
-            tmrServidor.Enabled = true;
+           String [] s= obtenerIP();
+            initIP = IPAddress.Parse(s[0].ToString().Trim());
+            initPort = Convert.ToInt32(s[1].ToString().Trim());
+            Control.CheckForIllegalCrossThreadCalls = false;
+            new Thread(new ThreadStart(InitNetWork)).Start();
         }
 
         private void btReservar_Click(object sender, EventArgs e)
         {
-            try
-            {
-                inOut.Enviar(Cliente, "DD" + salas[indiceSalaSeleccionada].nomSala);
+            //try
+            //{
+               SendMessage( "DD" + salas[indiceSalaSeleccionada].nomSala);
                 MessageBox.Show("Sala " + salas[indiceSalaSeleccionada].nomSala + " desbloqueada.");
-            }catch(Exception ee){
-                MessageBox.Show("La sala no pudo ser desbloqueada.");
-            }
+         
+            //}catch(Exception ee){
+            //    MessageBox.Show("La sala no pudo ser desbloqueada.");
+            //}
             
         }
 
@@ -434,114 +537,16 @@ namespace AdmLCI
             c.ShowDialog(this);
         }
 
-        private void tmrServidor_Tick(object sender, EventArgs e)
-        {
-            //IP = Properties.Settings.Default.IP;
-            IP = obtenerIP();
-        
-            //MessageBox.Show(IP);
-            try
-            {
-               // Actualizar(".");
-                if (Cliente != null && Cliente.Connected == false)
-                {
-                    //Actualizar("0");
-                    Cliente.Connect(IPAddress.Parse(IP), 4000);
-                    //label2.Text = "Conectando con el servicio..." + IP;
-                }
-                else
-                {
-                    if (Cliente.Available > 0)
-                    {
-                        Recibido = inOut.Recibir(Cliente);
-                       // label2.Text = Recibido;
-                        //MessageBox.Show("Estado y Recibido: " + lblEstado.Text);
-                        Cliente.Close();
-                        Cliente = new TcpClient();
-                        tmrServidor.Enabled = false;
-                        tmrCliente.Enabled = true;
-                        //botonCIP.Enabled = false;
-                    }
-                }
-            }
-            catch (Exception)
-            {
-                tmrServidor.Enabled = false;
-                tmrCliente.Enabled = false;/*Cliente = new TcpClient();*/
-                MessageBox.Show("Error en la conexión.");
-                //label2.Text = "Error de conexión... Es probable que la IP del servidor sea incorrecta o el \r\nservidor este apagado.";
-        
-            }
-        }
 
-        private void tmrCliente_Tick(object sender, EventArgs e)
-        {
-            try
-            {
-                if (Cliente != null && Cliente.Connected == false)
-                {
-                    Cliente.Connect(IPAddress.Parse(IP), Convert.ToInt32(Recibido));
-                   //label2.Text = Cliente.Client.RemoteEndPoint.ToString();
-                    inOut.Enviar(Cliente, "NN;" + "recepcion");
-                    //MessageBox.Show("Estado: " + lblEstado.Text);
-                }
-                else
-                {
-                    
-                    if (Cliente.Available > 0)
-                    {
-                        Recibido = inOut.Recibir(Cliente);
-                       MessageBox.Show("Recibido: " + Recibido);
-
-
-                        if (Recibido == "SS")
-                        {
-                          // Actualizar(Recibido);
-                            Cliente.Close();
-                            Cliente = new TcpClient();
-                            tmrServidor.Enabled = true;
-                            tmrCliente.Enabled = false;
-                        }
-                        else
-                        {
-
-                            if (salas != null && indiceSalaSeleccionada >= 0)
-                            {
-
-                                if (salas[indiceSalaSeleccionada].nomSala.Equals(Recibido))
-                                {
-
-                                    limpiarPantalla();
-                                    salas[indiceSalaSeleccionada].cargarMesas();
-                                }
-                            }
-                        }
-                        
-                    }
-                }
-            }
-            catch (Exception)
-            {
-                //label2.Text = "Error de conexion 1"; tmrServidor.Enabled = true;
-                tmrCliente.Enabled = false; Cliente = new TcpClient();
-            }
-        }
-
-        private void PantallaPrincipal_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (Cliente.Connected == true)
-            {
-                inOut.Enviar(Cliente, "SS");
-                //Desbloquear();
-                Cliente.Close();
-            }
-        }
+ 
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+
             try
             {
-                inOut.Enviar(Cliente, "BB" + salas[indiceSalaSeleccionada].nomSala);
+             SendMessage( "BB" + salas[indiceSalaSeleccionada].nomSala);
                 MessageBox.Show("Sala " + salas[indiceSalaSeleccionada].nomSala + " Bloqueada.");
             }
             catch (Exception ee)
@@ -552,7 +557,98 @@ namespace AdmLCI
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
+<<<<<<< HEAD
 
         }
+
+
+        private void pnContSala_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+     
+        public void actualizar_pantalla(){
+            String s = msg;
+           
+            if (salas != null && indiceSalaSeleccionada >= 0)
+            {
+
+                if (salas[indiceSalaSeleccionada].nomSala.Equals(msg.ToString()))
+                {
+                    msg = "";
+                    MessageBox.Show("Se actualizo la sala "+ s);
+                    limpiarPantalla();
+     
+                    salas[indiceSalaSeleccionada].cargarMesas();
+                  
+                  
+                }
+            }
+
+           
+
+=======
+
+        }
+
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+>>>>>>> b0bddc0e8911d1f3ced18a32fe2bfffc8b835285
+        private void pnContSala_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> b0bddc0e8911d1f3ced18a32fe2bfffc8b835285
+>>>>>>> b82c39fd041eb98c2369e0df49ada2de8deebc6c
+     
+        public void actualizar_pantalla(){
+            String s = msg;
+           
+            if (salas != null && indiceSalaSeleccionada >= 0)
+            {
+
+                if (salas[indiceSalaSeleccionada].nomSala.Equals(msg.ToString()))
+                {
+                    msg = "";
+                    MessageBox.Show("Se actualizo la sala "+ s);
+                    limpiarPantalla();
+     
+                    salas[indiceSalaSeleccionada].cargarMesas();
+                  
+                  
+                }
+            }
+
+           
+
+>>>>>>> b20ff36953d7235954e75e3976c96657ea60796a
+        
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            actualizar_pantalla();
+
+        }
+
+<<<<<<< HEAD
+=======
+       
+
+<<<<<<< HEAD
+
+=======
+>>>>>>> origin/master
+>>>>>>> b0bddc0e8911d1f3ced18a32fe2bfffc8b835285
+>>>>>>> b20ff36953d7235954e75e3976c96657ea60796a
     }
 }

@@ -94,6 +94,7 @@
             this.dgvUsr.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvUsr.Location = new System.Drawing.Point(105, 40);
             this.dgvUsr.Name = "dgvUsr";
+            this.dgvUsr.ReadOnly = true;
             this.dgvUsr.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvUsr.Size = new System.Drawing.Size(423, 192);
             this.dgvUsr.TabIndex = 27;
