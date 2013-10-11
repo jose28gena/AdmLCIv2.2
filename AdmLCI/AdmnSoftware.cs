@@ -90,7 +90,7 @@ namespace AdmLCI
        {
            try{
 
-           dataGridView1.DataSource = abrir.consultaLibreDT("SELECT  sft_nombre AS 'Nombre' ,sft_version AS 'Versión'   FROM Software where sft_nombre = '"+ tbBuscar.Text+"'");
+           dataGridView1.DataSource = abrir.consultaLibreDT("SELECT  sft_nombre AS 'Nombre' ,sft_version AS 'Versión'   FROM Software where sft_nombre LIKE '%"+ tbBuscar.Text+"'%");
        } 
            catch(NullReferenceException){ 
 

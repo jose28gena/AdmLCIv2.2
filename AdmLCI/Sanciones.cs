@@ -380,7 +380,9 @@ namespace AdmLCI
                         button2.Enabled = false;
                         button4.Enabled = true;
                         button1.Enabled = false;
-                    
+                    //asdf
+                        label1.Visible = false;
+                        label3.Visible = false;
                 }
             }
             catch (NullReferenceException)
@@ -417,6 +419,11 @@ namespace AdmLCI
 
                 MessageBox.Show("La lista de sancionados esta vacia.", "Sanciones", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+
+        }
+
+        private void Sanciones_Load(object sender, EventArgs e)
+        {
 
         }
 
