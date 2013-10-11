@@ -47,6 +47,8 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.tbServidorMago = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.puerto = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -146,7 +148,7 @@
             this.btCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btCancelar.Image")));
             this.btCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btCancelar.Location = new System.Drawing.Point(135, 265);
+            this.btCancelar.Location = new System.Drawing.Point(136, 295);
             this.btCancelar.Name = "btCancelar";
             this.btCancelar.Size = new System.Drawing.Size(79, 28);
             this.btCancelar.TabIndex = 33;
@@ -158,7 +160,7 @@
             // 
             this.btAceptar.Image = ((System.Drawing.Image)(resources.GetObject("btAceptar.Image")));
             this.btAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btAceptar.Location = new System.Drawing.Point(60, 265);
+            this.btAceptar.Location = new System.Drawing.Point(61, 295);
             this.btAceptar.Name = "btAceptar";
             this.btAceptar.Size = new System.Drawing.Size(69, 28);
             this.btAceptar.TabIndex = 32;
@@ -196,11 +198,13 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.puerto);
+            this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.tbServidorMago);
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Location = new System.Drawing.Point(10, 209);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(255, 49);
+            this.groupBox3.Size = new System.Drawing.Size(255, 80);
             this.groupBox3.TabIndex = 35;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Servidor";
@@ -221,13 +225,29 @@
             this.label6.TabIndex = 8;
             this.label6.Text = "Servidor:";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(14, 48);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(41, 13);
+            this.label7.TabIndex = 10;
+            this.label7.Text = "Puerto:";
+            // 
+            // puerto
+            // 
+            this.puerto.Location = new System.Drawing.Point(78, 45);
+            this.puerto.Name = "puerto";
+            this.puerto.Size = new System.Drawing.Size(132, 20);
+            this.puerto.TabIndex = 11;
+            // 
             // Config
             // 
             this.AcceptButton = this.btAceptar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btCancelar;
-            this.ClientSize = new System.Drawing.Size(275, 304);
+            this.ClientSize = new System.Drawing.Size(275, 335);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btCancelar);
@@ -239,7 +259,6 @@
             this.Name = "Config";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Configuración";
-            this.Load += new System.EventHandler(this.Config_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -270,5 +289,7 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox tbServidorMago;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox puerto;
+        private System.Windows.Forms.Label label7;
     }
 }
