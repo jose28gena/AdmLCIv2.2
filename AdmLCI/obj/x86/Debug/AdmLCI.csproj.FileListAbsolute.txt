@@ -466,7 +466,7 @@ C:\Users\DELL\Documents\GitHub\AdmLCIv2.2\AdmLCI\obj\x86\Debug\RdlCompile.cache
 C:\Users\DELL\Documents\GitHub\AdmLCIv2.2\AdmLCI\obj\x86\Debug\RdlCompile.compiled
 C:\Users\DELL\Documents\GitHub\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.exe
 C:\Users\DELL\Documents\GitHub\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.pdb
-<<<<<<< HEAD
+
 C:\Users\Ariel\Documents\GitHub\AdmLCIv2.2\AdmLCI\bin\Debug\AdmLCI.exe.config
 C:\Users\Ariel\Documents\GitHub\AdmLCIv2.2\AdmLCI\bin\Debug\AdmLCI.exe
 C:\Users\Ariel\Documents\GitHub\AdmLCIv2.2\AdmLCI\bin\Debug\AdmLCI.pdb
@@ -514,6 +514,4 @@ C:\Users\Ariel\Documents\GitHub\AdmLCIv2.2\AdmLCI\obj\x86\Debug\RdlCompile.cache
 C:\Users\Ariel\Documents\GitHub\AdmLCIv2.2\AdmLCI\obj\x86\Debug\RdlCompile.compiled
 C:\Users\Ariel\Documents\GitHub\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.exe
 C:\Users\Ariel\Documents\GitHub\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.pdb
-=======
 C:\Users\DELL\Documents\GitHub\AdmLCIv2.2\AdmLCI\obj\x86\Debug\AdmLCI.csprojResolveAssemblyReference.cache
->>>>>>> origin/master

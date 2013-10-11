@@ -560,20 +560,12 @@ namespace AdmLCI
 
         }
 
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
->>>>>>> b0bddc0e8911d1f3ced18a32fe2bfffc8b835285
         private void pnContSala_Paint(object sender, PaintEventArgs e)
         {
 
         }
-<<<<<<< HEAD
 
-=======
-=======
->>>>>>> b0bddc0e8911d1f3ced18a32fe2bfffc8b835285
      
         public void actualizar_pantalla(){
             String s = msg;
@@ -604,11 +596,6 @@ namespace AdmLCI
 
         }
 
-       
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/master
->>>>>>> b0bddc0e8911d1f3ced18a32fe2bfffc8b835285
     }
 }
