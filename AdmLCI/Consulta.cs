@@ -33,7 +33,7 @@ namespace AdmLCI
                 lbl1.Visible = true;
                 lbl1.Text = "No. equipo:";
                 lbl2.Visible = true;
-                tb2.Visible = true;
+               // tb2.Visible = true;
                 tb1.Visible = true;
                 comboBox1.Visible = true;
                 Conexion con = new Conexion();
@@ -207,13 +207,15 @@ namespace AdmLCI
                 tb2.Visible = false;
                 lbl1.Text = "Expediente";
                 tb1.Mask = "";
+                comboBox2.Visible = false;
+                comboBox1.Visible = false;
             }
             else if (cbConsulta.Items[cbConsulta.SelectedIndex].Equals("Equipo"))
             {
                 lbl1.Visible = true;
-                tb1.Visible = true;
+                tb1.Visible = false;
                 lbl2.Visible = true;
-                tb2.Visible = true;
+               // tb2.Visible = true;
                 lbl1.Text = "Equipo";
                 tb1.Mask = "000";
             }
@@ -223,7 +225,8 @@ namespace AdmLCI
                 tb1.Visible = false;
                 lbl2.Visible = false;
                 tb2.Visible = false;
-                
+                comboBox1.Visible = false;
+                comboBox2.Visible = false;
             }
         }
 
@@ -258,6 +261,7 @@ namespace AdmLCI
               "SELECT ieq_numero FROM  InvEquipo INNER JOIN Sala ON (InvEquipo.sa_id= Sala.sa_id) WHERE sa_letra='" + comboBox1.GetItemText(comboBox1.SelectedItem) + "' ORDER BY ieq_numero";
             comboBox2.Visible = true;
             dts = con.consultaLibreDT(query);
+            
             for (int i = 0; i < dts.Rows.Count; i++)
             {
                 comboBox2.Items.Add(dts.Rows[i]["ieq_numero"].ToString());

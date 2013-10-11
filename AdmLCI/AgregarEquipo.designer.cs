@@ -49,6 +49,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.gb.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).BeginInit();
@@ -74,6 +75,7 @@
             // 
             // gb
             // 
+            this.gb.Controls.Add(this.button1);
             this.gb.Controls.Add(this.tbNoMesa);
             this.gb.Controls.Add(this.tbNumEq);
             this.gb.Controls.Add(this.tbMonitor);
@@ -258,6 +260,16 @@
             this.label6.TabIndex = 7;
             this.label6.Text = "No. de equipo:";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(304, 158);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 22;
+            this.button1.Text = "prueba";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // AgregarEquipo
             // 
             this.AcceptButton = this.btAceptar;
@@ -304,6 +316,7 @@
         private System.Windows.Forms.TextBox tbNumEq;
         private System.Windows.Forms.TextBox tbMonitor;
         private System.Windows.Forms.TextBox tbNoMesa;
+        private System.Windows.Forms.Button button1;
     }
 }
 

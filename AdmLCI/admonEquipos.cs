@@ -111,7 +111,8 @@ namespace AdmLCI
                 //   // MessageBox.Show("" + dgvEquipos.Rows[dgvEquipos.CurrentRow.Index].Cells[i].Value.ToString());
                 //}
                 AgregarEquipo ae = new AgregarEquipo(this, dgvEquipos.Rows[dgvEquipos.CurrentRow.Index].Cells[0].Value.ToString(),sesion);
-                ae.ShowDialog(this);
+                //ae.ShowDialog(this);
+                ae.ShowDialog();
             }
         }
 
@@ -121,13 +122,15 @@ namespace AdmLCI
                 if (!tbBuscar.Text.Trim().Equals(""))
                 {
                     if(cbOpc.SelectedIndex==3)
-                        dgvEquipos.DataSource = con.consultaLibreDT("select ieq_id as 'ID', ieq_contraloria as 'No. contraloría',ieq_noserie_cpu as 'Serie CPU',ieq_noserie_mon as 'Serie monitor',Sala.sa_letra as 'Sala',ieq_numero as 'No. equipo',ieq_estado as 'Estado',ieq_tipo as 'Tipo',ieq_mesa as 'Mesa' from InvEquipo inner join Sala on InvEquipo.sa_id=Sala.sa_id where Sala.sa_letra='"+tbBuscar.Text.Trim()+"' ORDER BY Sala.sa_letra");
+                     
+                        dgvEquipos.DataSource = con.consultaLibreDT("select ieq_contraloria as 'No. contraloría',ieq_noserie_cpu as 'Serie CPU',ieq_noserie_mon as 'Serie monitor',Sala.sa_letra as 'Sala',ieq_numero as 'No. equipo',ieq_estado as 'Estado',ieq_tipo as 'Tipo',ieq_mesa as 'Mesa' from InvEquipo inner join Sala on InvEquipo.sa_id=Sala.sa_id where Sala.sa_letra LIKE'%"+tbBuscar.Text.Trim()+"%' ORDER BY Sala.sa_letra");
+                    
                     else if (cbOpc.SelectedIndex == 0)
-                        dgvEquipos.DataSource = con.consultaLibreDT("select ieq_id as 'ID', ieq_contraloria as 'No. contraloría',ieq_noserie_cpu as 'Serie CPU',ieq_noserie_mon as 'Serie monitor',Sala.sa_letra as 'Sala',ieq_numero as 'No. equipo',ieq_estado as 'Estado',ieq_tipo as 'Tipo',ieq_mesa as 'Mesa' from InvEquipo inner join Sala on InvEquipo.sa_id=Sala.sa_id where InvEquipo.ieq_noserie_cpu='" + tbBuscar.Text.Trim() + "' ORDER BY Sala.sa_letra");
+                        dgvEquipos.DataSource = con.consultaLibreDT("select ieq_contraloria as 'No. contraloría',ieq_noserie_cpu as 'Serie CPU',ieq_noserie_mon as 'Serie monitor',Sala.sa_letra as 'Sala',ieq_numero as 'No. equipo',ieq_estado as 'Estado',ieq_tipo as 'Tipo',ieq_mesa as 'Mesa' from InvEquipo inner join Sala on InvEquipo.sa_id=Sala.sa_id where InvEquipo.ieq_noserie_cpu LIKE'%" + tbBuscar.Text.Trim() + "%' ORDER BY Sala.sa_letra");
                     else if (cbOpc.SelectedIndex == 1)
-                        dgvEquipos.DataSource = con.consultaLibreDT("select ieq_id as 'ID', ieq_contraloria as 'No. contraloría',ieq_noserie_cpu as 'Serie CPU',ieq_noserie_mon as 'Serie monitor',Sala.sa_letra as 'Sala',ieq_numero as 'No. equipo',ieq_estado as 'Estado',ieq_tipo as 'Tipo',ieq_mesa as 'Mesa' from InvEquipo inner join Sala on InvEquipo.sa_id=Sala.sa_id where InvEquipo.ieq_noserie_mon='" + tbBuscar.Text.Trim() + "' ORDER BY Sala.sa_letra");
+                        dgvEquipos.DataSource = con.consultaLibreDT("select ieq_contraloria as 'No. contraloría',ieq_noserie_cpu as 'Serie CPU',ieq_noserie_mon as 'Serie monitor',Sala.sa_letra as 'Sala',ieq_numero as 'No. equipo',ieq_estado as 'Estado',ieq_tipo as 'Tipo',ieq_mesa as 'Mesa' from InvEquipo inner join Sala on InvEquipo.sa_id=Sala.sa_id where InvEquipo.ieq_noserie_mon LIKE '%" + tbBuscar.Text.Trim() + "%' ORDER BY Sala.sa_letra");
                     else if (cbOpc.SelectedIndex == 2)
-                        dgvEquipos.DataSource = con.consultaLibreDT("select ieq_id as 'ID', ieq_contraloria as 'No. contraloría',ieq_noserie_cpu as 'Serie CPU',ieq_noserie_mon as 'Serie monitor',Sala.sa_letra as 'Sala',ieq_numero as 'No. equipo',ieq_estado as 'Estado',ieq_tipo as 'Tipo',ieq_mesa as 'Mesa' from InvEquipo inner join Sala on InvEquipo.sa_id=Sala.sa_id where InvEquipo.ieq_contraloria='" + tbBuscar.Text.Trim() + "' ORDER BY Sala.sa_letra"); 
+                        dgvEquipos.DataSource = con.consultaLibreDT("select ieq_contraloria as 'No. contraloría',ieq_noserie_cpu as 'Serie CPU',ieq_noserie_mon as 'Serie monitor',Sala.sa_letra as 'Sala',ieq_numero as 'No. equipo',ieq_estado as 'Estado',ieq_tipo as 'Tipo',ieq_mesa as 'Mesa' from InvEquipo inner join Sala on InvEquipo.sa_id=Sala.sa_id where InvEquipo.ieq_contraloria LIKE '%" + tbBuscar.Text.Trim() + "%' ORDER BY Sala.sa_letra"); 
 
                 }
                 else

@@ -131,7 +131,9 @@ namespace AdmLCI
                 {
                    
                     ie= new InfoEquipo(this,sesion);
-                    ie.ShowDialog();                 
+                    
+                    ie.ShowDialog();
+                    
                 }
         }
     }

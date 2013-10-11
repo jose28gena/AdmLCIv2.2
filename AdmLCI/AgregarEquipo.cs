@@ -114,12 +114,18 @@ namespace AdmLCI
                     //Si no existe se agrega un nuevo equipo.
                     else if (modificar == false && !con.existe("select * from InvEquipo where ieq_contraloria='" + tbContraloria.Text + "' or ieq_noserie_cpu='" + tbCPU.Text + "' or ieq_noserie_mon='" + tbMonitor.Text + "'"))
                     {
-                        string[] campos = { "ieq_noserie_cpu", "ieq_noserie_mon", "ieq_contraloria", "sa_id", "ieq_numero", "ieq_mesa", "ieq_tipo" };
-                        string[] datos = { "'" + tbCPU.Text.Trim() + "'", "'" + tbMonitor.Text.Trim() + "'", "'" + tbContraloria.Text.Trim() + "'", "'" + (dtS.Rows[cbSala.SelectedIndex][0].ToString()) + "'", tbNumEq.Text.Trim(), tbNoMesa.Text.Trim(), "'" + cbTipo.Items[cbTipo.SelectedIndex].ToString() + "'" };
-                        con.insertarEnTabla(campos, datos, "InvEquipo");
-                        con.modificar("insert into HistorialAcciones (ha_accion,usr_id,ha_objeto,ieq_contraloria, ha_fecha) values('Agregar','" + sesion.idUsr + "', 'E-" + cbSala.Items[cbSala.SelectedIndex].ToString() + tbNumEq.Text + "','" + tbContraloria.Text + "','" + (DateTime.Now.Day + "-" + DateTime.Now.Month + "-" + DateTime.Now.Year + " " + DateTime.Now.Hour + ":" + DateTime.Now.Minute) + "') ");
-                        admEq.mostrarEquipos();
-                        this.Close();
+
+                        if (!con.existe("SELECT ieq_numero FROM  InvEquipo INNER JOIN Sala ON (InvEquipo.sa_id= Sala.sa_id) WHERE sa_letra='"+cbSala.GetItemText(cbSala.SelectedItem)+"' and ieq_numero="+tbNumEq.Text+" ORDER BY ieq_numero;"))
+                        {
+                            string[] campos = { "ieq_noserie_cpu", "ieq_noserie_mon", "ieq_contraloria", "sa_id", "ieq_numero", "ieq_mesa", "ieq_tipo" };
+                            string[] datos = { "'" + tbCPU.Text.Trim() + "'", "'" + tbMonitor.Text.Trim() + "'", "'" + tbContraloria.Text.Trim() + "'", "'" + (dtS.Rows[cbSala.SelectedIndex][0].ToString()) + "'", tbNumEq.Text.Trim(), tbNoMesa.Text.Trim(), "'" + cbTipo.Items[cbTipo.SelectedIndex].ToString() + "'" };
+                            con.insertarEnTabla(campos, datos, "InvEquipo");
+                            con.modificar("insert into HistorialAcciones (ha_accion,usr_id,ha_objeto,ieq_contraloria, ha_fecha) values('Agregar','" + sesion.idUsr + "', 'E-" + cbSala.Items[cbSala.SelectedIndex].ToString() + tbNumEq.Text + "','" + tbContraloria.Text + "','" + (DateTime.Now.Day + "-" + DateTime.Now.Month + "-" + DateTime.Now.Year + " " + DateTime.Now.Hour + ":" + DateTime.Now.Minute) + "') ");
+                            admEq.mostrarEquipos();
+                            this.Close();
+                        }
+                        else { MessageBox.Show("Ya hay una computadora con ese número, favor de revisarlo"); }
+                       
                     }
                     else
                         MessageBox.Show("Verifique que no esta duplicando el número de contraloría, número de serie del CPU o el número de serie del monitor.");
@@ -186,6 +192,20 @@ namespace AdmLCI
         {
             tbNoMesa.Text = v.validar(tbNoMesa.Text);
             tbNoMesa.Select(tbNoMesa.Text.Length, 0);
-        }        
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            
+        }
+
+       /* public Boolean validarPc()
+        {
+            Boolean NoExiste=true;
+            String query = "SELECT ieq_numero FROM  InvEquipo INNER JOIN Sala ON (InvEquipo.sa_id= Sala.sa_id) WHERE sa_letra='" + cbSala.GetItemText(cbSala.SelectedItem) + "' ORDER BY ieq_numero";
+            Conexion con = new Conexion();
+            DataTable dt = con.consultaLibreDT(query);
+            return NoExiste;
+        }*/
     }
 }

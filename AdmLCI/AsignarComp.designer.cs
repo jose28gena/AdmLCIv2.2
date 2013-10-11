@@ -34,6 +34,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btLimpiar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.tbNombre = new System.Windows.Forms.TextBox();
             this.tbExpediente = new System.Windows.Forms.TextBox();
@@ -44,7 +45,7 @@
             this.lblSala = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.pbFoto = new System.Windows.Forms.PictureBox();
-            this.btLimpiar = new System.Windows.Forms.Button();
+            this.btBuscar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).BeginInit();
             this.SuspendLayout();
@@ -86,6 +87,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btBuscar);
             this.groupBox1.Controls.Add(this.btLimpiar);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.tbNombre);
@@ -105,6 +107,19 @@
             this.groupBox1.Size = new System.Drawing.Size(518, 169);
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
+            // 
+            // btLimpiar
+            // 
+            this.btLimpiar.Image = ((System.Drawing.Image)(resources.GetObject("btLimpiar.Image")));
+            this.btLimpiar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btLimpiar.Location = new System.Drawing.Point(423, 137);
+            this.btLimpiar.Name = "btLimpiar";
+            this.btLimpiar.Size = new System.Drawing.Size(71, 28);
+            this.btLimpiar.TabIndex = 26;
+            this.btLimpiar.Text = "Limpiar";
+            this.btLimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btLimpiar.UseVisualStyleBackColor = true;
+            this.btLimpiar.Click += new System.EventHandler(this.btLimpiar_Click);
             // 
             // button2
             // 
@@ -131,7 +146,7 @@
             // 
             this.tbExpediente.Location = new System.Drawing.Point(107, 13);
             this.tbExpediente.Name = "tbExpediente";
-            this.tbExpediente.Size = new System.Drawing.Size(301, 20);
+            this.tbExpediente.Size = new System.Drawing.Size(252, 20);
             this.tbExpediente.TabIndex = 1;
             this.tbExpediente.TextChanged += new System.EventHandler(this.tbExpediente_TextChanged_1);
             this.tbExpediente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbExpediente_KeyPress);
@@ -217,18 +232,16 @@
             this.pbFoto.TabIndex = 3;
             this.pbFoto.TabStop = false;
             // 
-            // btLimpiar
+            // btBuscar
             // 
-            this.btLimpiar.Image = ((System.Drawing.Image)(resources.GetObject("btLimpiar.Image")));
-            this.btLimpiar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btLimpiar.Location = new System.Drawing.Point(423, 137);
-            this.btLimpiar.Name = "btLimpiar";
-            this.btLimpiar.Size = new System.Drawing.Size(71, 28);
-            this.btLimpiar.TabIndex = 26;
-            this.btLimpiar.Text = "Limpiar";
-            this.btLimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btLimpiar.UseVisualStyleBackColor = true;
-            this.btLimpiar.Click += new System.EventHandler(this.btLimpiar_Click);
+            this.btBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btBuscar.Image")));
+            this.btBuscar.Location = new System.Drawing.Point(376, 13);
+            this.btBuscar.Name = "btBuscar";
+            this.btBuscar.Size = new System.Drawing.Size(21, 20);
+            this.btBuscar.TabIndex = 27;
+            this.btBuscar.UseVisualStyleBackColor = true;
+            this.btBuscar.Click += new System.EventHandler(this.btBuscar_Click);
             // 
             // AsignarComp
             // 
@@ -272,5 +285,6 @@
         private System.Windows.Forms.TextBox tbNombre;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btLimpiar;
+        private System.Windows.Forms.Button btBuscar;
     }
 }
